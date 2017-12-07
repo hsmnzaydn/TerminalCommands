@@ -1,0 +1,736 @@
+[
+    {
+        "id":0,
+        "categoryName":"File Commands",
+        "categoryThumbnail":"R.drawable.folder",
+        "commands":[
+            {
+                "CommandName": "ls",
+                "Detail": "List current directory"
+              },
+              {
+                "CommandName": "ls -i",
+                "Detail": "Display Inode number of File or Directory"
+              },
+              {
+                "CommandName": "ls -R",
+                "Detail": "Shows recursively list of Sub-Directories"
+              },
+              {
+                "CommandName": "ls -l",
+                "Detail": "Shows file or directory,size,modified date and time, file or folder name and owner of file and it's permission"
+              },
+              {
+                "CommandName": "ls -lh",
+                "Detail": "Shows sizes in human readable format"
+              },
+              {
+                "CommandName": "ls -al",
+                "Detail": "Formatted listing with hidden files"
+              },
+              {
+                "CommandName": "cd dir",
+                "Detail": "Changed directory to dir"
+              },
+              {
+                "CommandName": "cd ..",
+                "Detail": "Change directory to before dir"
+              },
+              {
+                "CommandName": "pwd",
+                "Detail": "Show current directory"
+              },
+              {
+                "CommandName": "mkdir dir",
+                "Detail": "Create a dir on your current directory"
+              },
+              {
+                "CommandName": "rm dir",
+                "Detail": "Delete the dir"
+              },
+              {
+                "CommandName": "rm -r file",
+                "Detail": "Delete the file"
+              },
+              {
+                "CommandName": "rm -f file",
+                "Detail": "Force remove file"
+              },
+              {
+                "CommandName": "rm *",
+                "Detail": "Delete all file in your current directory"
+              },
+              {
+                "CommandName": "rm a*",
+                "Detail": "Delete all starting with a file"
+              },
+              {
+                "CommandName": "rm bet*as",
+                "Detail": "Delete starting with as and ending with bet files"
+              },
+              {
+                "CommandName": "cp fileA fileB",
+                "Detail": "Copy fileA to fileB"
+              },
+              {
+                "CommandName": "cp -r dir1 dir2",
+                "Detail": "Copy dir1 to dir2.If there isn't dir2 it create a dir2"
+              },
+              {
+                "CommandName": "mv dir1 dir2",
+                "Detail": "Move dir1 to dir2"
+              },
+              {
+                "CommandName": "ls -s file link",
+                "Detail": "Create sembolic link for file"
+              },
+              {
+                "CommandName": "touch file",
+                "Detail": "Create a file or update file"
+              },
+              {
+                "CommandName": "cat>file",
+                "Detail": "Write input to in file"
+              },
+              {
+                "CommandName": "more file",
+                "Detail": "Get informatin abouth file"
+              },
+              {
+                "CommandName": "head file",
+                "Detail": "Get first 10 line of file"
+              },
+              {
+                "CommandName": "less text",
+                "Detail": "Return content of text"
+              },
+              {
+                "CommandName": "comm fileA fileB",
+                "Detail": "Compare fileA with fileB"
+              }
+        ]
+    },
+    {
+        "id":1,
+        "categoryName":"Search Commands",
+      "categoryThumbnail":"R.drawable.folder",
+        "commands":[
+            {
+                "CommandName": "locate fileA",
+                "Detail": "Index other files in the directory where the file is located"
+              },
+              {
+                "CommandName": "find / -name foo",
+                "Detail": "Search with gived name of file"
+              },
+              {
+                "CommandName": "find /home -iname file.txt",
+                "Detail": "Find name is file.txt files in home directory"
+              },
+              {
+                "CommandName": "find / -type d -name file",
+                "Detail": "Find all file files"
+              },
+              {
+                "CommandName": "find . -type f -name *.php",
+                "Detail": "Find all .php file in file"
+              },
+              {
+                "CommandName": "find . -type f -perm 0777 - print",
+                "Detail": "Find all permission 777 files"
+              },
+              {
+                "CommandName": "find ~ -empty",
+                "Detail": "Find all empty file"
+              },
+              {
+                "CommandName": "find / -atime 50",
+                "Detail": "Find changed files in 50 days"
+              },
+              {
+                "CommandName": "find / -cmin -60",
+                "Detail": "Find changed files in 1 hour"
+              },
+              {
+                "CommandName": "find / -mmin -60",
+                "Detail": "Find modified files in 1 hour"
+              },
+              {
+                "CommandName": "find / -size +50M -size -100M",
+                "Detail": "Find between 500M and 100M files"
+              },
+              {
+                "CommandName": "lsattr",
+                "Detail": "Find unalterable files in system"
+              },
+              {
+                "CommandName": "find <file_path> -perm -4000",
+                "Detail": "Find has suid_bites file"
+              } 
+        ]
+    },
+    {
+        "id":2,
+        "categoryName":"Compression Commands",
+      "categoryThumbnail":"R.drawable.folder",
+        "commands":[
+            {
+                "CommandName": "bzip filename",
+                "Detail": "Compress of unzip the bzip file"
+              },
+              {
+                "CommandName": "tar cf file.tar file",
+                "Detail": "Convert file to file.tar"
+              },
+              {
+                "CommandName": "tar xf file.tar",
+                "Detail": "Unzip file.tar"
+              },
+              {
+                "CommandName": "tar czf file.tar.gz file",
+                "Detail": "Convert file to file.tar.gz"
+              },
+              {
+                "CommandName": "tar xzf file.tar.gz",
+                "Detail": "Unzip file.tar.gz"
+              },
+              {
+                "CommandName": "tar cjf file.tar.bz2",
+                "Detail": "Create a file.tar.bz2 with Bzip2"
+              },
+              {
+                "CommandName": "tar xjf file.tar.bz2",
+                "Detail": "Unzip file.tar.bz2"
+              },
+              {
+                "CommandName": "gzip file",
+                "Detail": "Convert file to file.gzip"
+              },
+              {
+                "CommandName": "gzip -d file.gz",
+                "Detail": "Unzip file.gz"
+              }
+        ]
+    },
+    {
+        "id":3,
+        "categoryName":"FTP Commands",
+      "categoryThumbnail":"R.drawable.folder",
+        "commands":[
+            {
+                "CommandName": "ftp",
+                "Detail": "Enter ftp client"
+              },
+              {
+                "CommandName": "-p",
+                "Detail": "Use passive mode"
+              },
+              {
+                "CommandName": "-i",
+                "Detail": "Shutdown request on multi transfer."
+              },
+              {
+                "CommandName": "-v",
+                "Detail": "Verbose mode"
+              },
+              {
+                "CommandName": "-d",
+                "Detail": "Active Debugging"
+              },
+              {
+                "CommandName": "$",
+                "Detail": "Run makro"
+              },
+              {
+                "CommandName": "account[password]",
+                "Detail": "Provides password with remote control"
+              },
+              {
+                "CommandName": "ascii",
+                "Detail": "Setting ascii protocol the transfer file"
+              },
+              {
+                "CommandName": "binary",
+                "Detail": "Support transfer of Images"
+              },
+              {
+                "CommandName": "bye",
+                "Detail": "Out the FTP"
+              },
+              {
+                "CommandName": "dir",
+                "Detail": "Show your current files"
+              },
+              {
+                "CommandName": "open Host",
+                "Detail": "Open connect to host"
+              },
+              {
+                "CommandName": "status",
+                "Detail": "Show status of server"
+              }
+        ]
+    },
+    {
+        "id":4,
+        "categoryName":"Network Commands",
+      "categoryThumbnail":"R.drawable.folder",
+        "commands":[
+            {
+                "CommandName": "arp",
+                "Detail": "Control your network card and show your ip"
+              },
+              {
+                "CommandName": "ifconfig",
+                "Detail": "Show network interface"
+              },
+              {
+                "CommandName": "ping host",
+                "Detail": "Send ping to address of host"
+              },
+              {
+                "CommandName": "whois domain",
+                "Detail": "Get information of domain"
+              },
+              {
+                "CommandName": "dig domain",
+                "Detail": "Get dns information of domain"
+              },
+              {
+                "CommandName": "wget adress",
+                "Detail": "Download the information of adress"
+              },
+              {
+                "CommandName": "wget -c adress",
+                "Detail": "Continue the download"
+              },
+              {
+                "CommandName": "netstat",
+                "Detail": "Look connect of network and open the sockets"
+              }
+        ]
+    },
+    {
+        "id":5,
+        "categoryName":"System Commands",
+      "categoryThumbnail":"R.drawable.folder",
+        "commands":[
+            {
+                "CommandName": "date",
+                "Detail": "Show date"
+              },
+              {
+                "CommandName": "date;who",
+                "Detail": "Show date and user"
+              },
+              {
+                "CommandName": "sudo command",
+                "Detail": "Run command with root"
+              },
+              {
+                "CommandName": "sudo su",
+                "Detail": "Change the mode on terminal"
+              },
+              {
+                "CommandName": "cal",
+                "Detail": "Show calendar"
+              },
+              {
+                "CommandName": "uptime",
+                "Detail": "Show time of your system"
+              },
+              {
+                "CommandName": "whoami",
+                "Detail": "Show your login account"
+              },
+              {
+                "CommandName": "fingure userName",
+                "Detail": "Show information of userName"
+              },
+              {
+                "CommandName": "cat /proc/cpuinfo",
+                "Detail": "Show CPU information"
+              },
+              {
+                "CommandName": "cat /proc/meminfo",
+                "Detail": "Show memory information"
+              },
+              {
+                "CommandName": "df",
+                "Detail": "Show disk usage"
+              },
+              {
+                "CommandName": "free",
+                "Detail": "Show memory and swap area"
+              },
+              {
+                "CommandName": "whereis application",
+                "Detail": "Show directory of application"
+              },
+              {
+                "CommandName": "which application",
+                "Detail": "Show default application"
+              },
+              {
+                "CommandName": "ps aux",
+                "Detail": "Show running application on your system"
+              },
+              {
+                "CommandName": "kill application",
+                "Detail": "Shutdown the application"
+              },
+              {
+                "CommandName": "sensors",
+                "Detail": "Show temperature of CPU"
+              },
+              {
+                "CommandName": "uname -letter",
+                "Detail": "-m Show your system hardware.\n-n Write Nodename. Nodename has usage for network communication.\n-r Show kernel's release\n-s Write name of system\n-v Write name of OS \n-a Write all information of up"
+              },
+              {
+                "CommandName": "alias",
+                "Detail": "Create a shortcut for "
+              },
+              {
+                "CommandName": "dd",
+                "Detail": "Usage for content of disk"
+              },
+              {
+                "CommandName": "shutdown",
+                "Detail": "shutdown the system"
+              },
+              {
+                "CommandName": "apropos",
+                "Detail": "Search a word in man's pages"
+              },
+              {
+                "CommandName": "chfn",
+                "Detail": "Change information of finger"
+              },
+              {
+                "CommandName": "chgrp",
+                "Detail": "Change group"
+              },
+              {
+                "CommandName": "clear",
+                "Detail": "Clear the terminal"
+              },
+              {
+                "CommandName": "continue",
+                "Detail": "continue the commands "
+              },
+              {
+                "CommandName": "deluser userName",
+                "Detail": "Delete the userName "
+              },
+              {
+                "CommandName": "delgroup group",
+                "Detail": "Delete the group"
+              },
+              {
+                "CommandName": "groupadd group",
+                "Detail": "Create a new group "
+              },
+              {
+                "CommandName": "halt",
+                "Detail": "Stop the system "
+              },
+              {
+                "CommandName": "help",
+                "Detail": "Get help"
+              },
+              {
+                "CommandName": "lsb_release -a",
+                "Detail": "Show information of distribution"
+              },
+              {
+                "CommandName": "dmidecode",
+                "Detail": "Get data of system(bios,memory,cache etc).Exp:demicode --type bios, demicode --type memory"
+              },
+              {
+                "CommandName": "free -m",
+                "Detail": "Show quantity of memory"
+              },
+              {
+                "CommandName": "history",
+                "Detail": "Show used terminal commands"
+              },
+              {
+                "CommandName": "passwd <userName>",
+                "Detail": "Change the password of userName"
+              },
+              {
+                "CommandName": "usermod -L <userName>",
+                "Detail": "Lock the userName account"
+              },
+              {
+                "CommandName": "usermod -U <userName>",
+                "Detail": "Re-active the userName"
+              },
+              {
+                "CommandName": "chage -E date(12.02.2022) <userName>",
+                "Detail": "Used to specify the user account's password expiration time. "
+              },
+              {
+                "CommandName": "echo $SHELL",
+                "Detail": "Used to view the shell program used on your system."
+              }
+        ]
+    },
+    {
+        "id":6,
+        "categoryName":"Permission Commands",
+      "categoryThumbnail":"R.drawable.folder",
+        "commands":[
+            {
+                "CommandName": "chmod +r file",
+                "Detail": "Give read permission to file"
+              },
+              {
+                "CommandName": "chmod +w file",
+                "Detail": "Give to write permission to file"
+              },
+              {
+                "CommandName": "chmod u+rw file",
+                "Detail": "Give writer and read permission to file"
+              },
+              {
+                "CommandName": "chmod a-x file",
+                "Detail": "Remove the permission of all user for file"
+              },
+              {
+                "CommandName": "chmod u+rw file",
+                "Detail": "Bununla sahip (bu genellikle sizsiniz), my dosyası üzerinde okuma ve yazma iznine sahip olur."
+              },
+              {
+                "CommandName": "chmod +x file",
+                "Detail": "Give run permission to file"
+              },
+              {
+                "CommandName": "chattr +i file",
+                "Detail": "It's make file to unalterable file"
+              },
+              {
+                "CommandName": "chmod a+r file",
+                "Detail": "Give read permission to file for All user"
+              }
+        ]
+    },
+    {
+        "id":7,
+        "categoryName":"Git Commands",
+      "categoryThumbnail":"R.drawable.folder",
+        "commands":[
+            {
+                "CommandName": "git config --global user.name \"User name\"",
+                "Detail": "Determines default userName for git"
+              },
+              {
+                "CommandName": "git config --global email \"mail adress\"",
+                "Detail": "Determines default mail for git"
+              },
+              {
+                "CommandName": "git log",
+                "Detail": "Show all changes on local repo"
+              },
+              {
+                "CommandName": "git status",
+                "Detail": "Show changes on log file"
+              },
+              {
+                "CommandName": "git clone repoAdress",
+                "Detail": "Copy the repo to current path"
+              },
+              {
+                "CommandName": "git clone userName@host:/patch/repo ",
+                "Detail": "Copy repo to your current file"
+              },
+              {
+                "CommandName": "git add fileName",
+                "Detail": "Add your file to index"
+              },
+              {
+                "CommandName": "git add *",
+                "Detail": "Add all file to index"
+              },
+              {
+                "CommandName": "git commit -m \" commit \" ",
+                "Detail": "Add commit to index file"
+              },
+              {
+                "CommandName": "git push origin master",
+                "Detail": "Push your files to repo"
+              },
+              {
+                "CommandName": "git checkout -b branchName",
+                "Detail": "Create new a branch"
+              },
+              {
+                "CommandName": "git checkout master",
+                "Detail": "Return to master branch"
+              },
+              {
+                "CommandName": "git branch -d branch",
+                "Detail": "Delete the branch"
+              },
+              {
+                "CommandName": "git push origin branch",
+                "Detail": "Your changes push to your branch"
+              },
+              {
+                "CommandName": "git pull",
+                "Detail": "Get last changes"
+              },
+              {
+                "CommandName": "git merge branchName",
+                "Detail": "Merge branch other branch"
+              }
+        ]
+    },
+    {
+        "id":8,
+        "categoryName":"APT Commands",
+      "categoryThumbnail":"R.drawable.folder",
+        "commands":[
+            {
+                "CommandName": "apt-get update",
+                "Detail": "Update your packages"
+              },
+              {
+                "CommandName": "apt-get upgrade",
+                "Detail": "upgrade your all package"
+              },
+              {
+                "CommandName": "apt-get dist-upgrade",
+                "Detail": "Upgrade your Debian version to last version"
+              },
+              {
+                "CommandName": "apt-get install package_name",
+                "Detail": "Install the package"
+              },
+              {
+                "CommandName": "apt-get install package1 package2 package3 package4 package5 package6 ...",
+                "Detail": "Install multi package"
+              },
+              {
+                "CommandName": "sudo apt-get purge package_name",
+                "Detail": "Remove package with dependency"
+              },
+              {
+                "CommandName": "apt-get remove packageName",
+                "Detail": "Remove the package"
+              },
+              {
+                "CommandName": "apt-get autoremove",
+                "Detail": "Remove old packages"
+              },
+              {
+                "CommandName": "apt-get -f install",
+                "Detail": "It tries to repair faulty packages"
+              },
+              {
+                "CommandName": "dpkg -i package.deb",
+                "Detail": "Install package.deb"
+              },
+              {
+                "CommandName": "sudo add-apt-repository yeni_deponun_PPA_adresi",
+                "Detail": "Add new repository"
+              },
+              {
+                "CommandName": "sudo apt-cache show package_name",
+                "Detail": "Give information of abouth package"
+              },
+              {
+                "CommandName": "apt-get help",
+                "Detail": "Get information about help"
+              }
+        ]
+    },
+    {
+        "id":9,
+        "categoryName":"Pacman Commands",
+      "categoryThumbnail":"R.drawable.folder",
+        "commands":[
+            {
+                "CommandName": "pacman-optimize && sync",
+                "Detail": "Optimize and match download speed"
+              },
+              {
+                "CommandName": "pacman -Su",
+                "Detail": "Update your system"
+              },
+              {
+                "CommandName": "IgnorePkg=package_name",
+                "Detail": "Boosts some packages"
+              },
+              {
+                "CommandName": "IgnoreGroup=package_group",
+                "Detail": "Package group is ignoring altitude"
+              },
+              {
+                "CommandName": "pacman -S package_name",
+                "Detail": "Install package"
+              },
+              {
+                "CommandName": "pacman -Sw package_name",
+                "Detail": "Download a package without installing"
+              },
+              {
+                "CommandName": "pacman -U /package patch/packagename.pkg.tar.xz",
+                "Detail": "Install packagename.pkg.tar.xz"
+              },
+              {
+                "CommandName": "pacman -U http://www.examplepackage/repo/examplepkg.tar.xz",
+                "Detail": "Package loads over the mirror"
+              },
+              {
+                "CommandName": "pacman -R package_name",
+                "Detail": "Remove package"
+              },
+              {
+                "CommandName": "pacman -Rs package_name",
+                "Detail": "Remove package with not use other package's dependencies"
+              },
+              {
+                "CommandName": "pacman -Rsc package_name",
+                "Detail": "Remove package with dependencies"
+              },
+              {
+                "CommandName": "pacman -Sc $(pacman -Qdtq)",
+                "Detail": "Empty all unnecessary packages"
+              },
+              {
+                "CommandName": "pacman -Scc",
+                "Detail": "Empty the memory of the packages"
+              },
+              {
+                "CommandName": "pacman -Sc",
+                "Detail": "Clean memory"
+              },
+              {
+                "CommandName": "pacman -Rs $(pacman -Qtdq)",
+                "Detail": "Cleans up unneeded packages"
+              },
+              {
+                "CommandName": "pacman -Ss package_name",
+                "Detail": "Search package with explanations"
+              },
+              {
+                "CommandName": "pacman -Qs package_name",
+                "Detail": "Search in installed packages"
+              },
+              {
+                "CommandName": "pacman -Si package_name",
+                "Detail": "Get information about the package"
+              },
+              {
+                "CommandName": "pacman -Ql",
+                "Detail": "List of installed packages"
+              },
+              {
+                "CommandName": "pacman -Qdt",
+                "Detail": "Unnecessary packages list without dependencies"
+              }
+        ]
+    }
+]

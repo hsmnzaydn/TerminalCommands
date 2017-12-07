@@ -1,0 +1,779 @@
+[
+  {
+    "id": 0,
+    "categoryName": "Dosya Komutları",
+    "categoryThumbnail": "R.drawable.folder",
+    "commands": [
+      {
+        "CommandName": "ls",
+        "Detail": "Klasör altındaki dosyaların adlarını verir"
+      },
+      {
+        "CommandName": "ls -i",
+        "Detail": "Dosyanın inode numarasını gösterir"
+      },
+      {
+        "CommandName": "ls -R",
+        "Detail": "Yinemeli olarak alt dizinlerin listesini gösterir"
+      },
+      {
+        "CommandName": "ls -l",
+        "Detail": "Dosya veya dizini gösterir.Dosyanın değiştirilme tarihini ve saatini gösterir."
+      },
+      {
+        "CommandName": "ls -lh",
+        "Detail": "Okunabilir biçimde dosya boyutlarını gösterir"
+      },
+      {
+        "CommandName": "ls -al",
+        "Detail": "Gizli dosyalarıda gösterir"
+      },
+      {
+        "CommandName": "cd dosyayolu",
+        "Detail": "Bulunduğunuz dosya yolunu değiştirir"
+      },
+      {
+        "CommandName": "cd ..",
+        "Detail": "Bir önceki dosya yoluna gider"
+      },
+      {
+        "CommandName": "pwd",
+        "Detail": "Bulunduğunuz dizini verir"
+      },
+      {
+        "CommandName": "mkdir dizin",
+        "Detail": "Yeni bir dizin oluşturur"
+      },
+      {
+        "CommandName": "rm dosya",
+        "Detail": "Dosyayı siler"
+      },
+      {
+        "CommandName": "rm -r dizin",
+        "Detail": "Dizini siler"
+      },
+      {
+        "CommandName": "rm -f dosya",
+        "Detail": "Dosyayı kaldırmaya zorlar"
+      },
+      {
+        "CommandName": "rm *",
+        "Detail": "Bütün dosyaları siler"
+      },
+      {
+        "CommandName": "rm a*",
+        "Detail": "a ile başlayan tüm dosyaları siler"
+      },
+      {
+        "CommandName": "rm bet*as",
+        "Detail": "bet ile başlayıp as ile biten tüm dosyaları siler"
+      },
+      {
+        "CommandName": "cp dosyaA dosyaB",
+        "Detail": "dosyaA'yi dosyaB'ye kopyalar"
+      },
+      {
+        "CommandName": "cp -r dizin1 dizin2",
+        "Detail": "dizin1'i dizin2'ye kopyalar.Eğer dizin2 diye dizin yoksa dizin2 adında bir dizin oluşturur."
+      },
+      {
+        "CommandName": "mv dosya1 dosya2",
+        "Detail": "dosya1 'i dosya2' ye taşır"
+      },
+      {
+        "CommandName": "ls -s dosya link",
+        "Detail": "Dosyada sembolik bir link oluşturur."
+      },
+      {
+        "CommandName": "touch dosya",
+        "Detail": "Ya dosya oluşturur yada dosyayı günceller"
+      },
+      {
+        "CommandName": "cat>dosya",
+        "Detail": "Dosyanın içine input yazar"
+      },
+      {
+        "CommandName": "more dosya",
+        "Detail": "Dosyanın içeriğini çıktı olarak verir"
+      },
+      {
+        "CommandName": "head dosya",
+        "Detail": "Dosyanın ilk 10 satırını verir"
+      },
+      {
+        "CommandName": "less text",
+        "Detail": "Text dosyasının içeriğini çıktılar"
+      },
+      {
+        "CommandName": "comm DosyaA DosyaB",
+        "Detail": "Iki dosyayi satir satir karsilastırır."
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "categoryName": "Arama Komutları",
+    "categoryThumbnail": "R.drawable.folder",
+    "commands": [
+      {
+        "CommandName": "locate dosya",
+        "Detail": "Dosyanın bulunduğu dizindeki diğer dosyaları dizinler"
+      },
+      {
+        "CommandName": "find / -name foo",
+        "Detail": "Dosyaya verilen isim ile arama yapar"
+      },
+      {
+        "CommandName": "find /home -iname dosya.txt",
+        "Detail": "Adı dosya.text olan ve ana dizinde hem büyük hem de küçük harf içeren dosyaları bulun."
+      },
+      {
+        "CommandName": "find / -type d -name dosya",
+        "Detail": "dosya adındaki tüm dosyaları bulur"
+      },
+      {
+        "CommandName": "find . -type f -name *.php",
+        "Detail": "Dizindeki tüm php dosyalarını bulur"
+      },
+      {
+        "CommandName": "find . -type f -perm 0777 - print",
+        "Detail": "İzini 777 olan tüm dizinleri bulur"
+      },
+      {
+        "CommandName": "find ~ -empty",
+        "Detail": "Home dizininin içindeli tüm boş dizinleri bulur"
+      },
+      {
+        "CommandName": "find / -atime 50",
+        "Detail": "50 gün önce erişilen tüm dosyaları bulur"
+      },
+      {
+        "CommandName": "find / -cmin -60",
+        "Detail": "1 saat içinde değiştirilen tüm dosyaları bulur"
+      },
+      {
+        "CommandName": "find / -mmin -60",
+        "Detail": "1 saat içinde modifiye edilen tüm dosyaları bulur"
+      },
+      {
+        "CommandName": "find / -size +50M -size -100M",
+        "Detail": "50MB ve 100MB arasındaki tüm dosyaları bulur"
+      },
+      {
+        "CommandName": "lsattr",
+        "Detail": "Sistemde değiştirilemez dosya olup olmadığını bulmak için kullanılır"
+      },
+      {
+        "CommandName": "find <dosya_yolu> -perm -4000",
+        "Detail": "Dosya yolunda bulunan suid bite sahip dosyaları bulmak için kullanılır"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "categoryName": "Sıkıştırma Komutları",
+    "categoryThumbnail": "R.drawable.folder",
+    "commands": [
+      {
+        "CommandName": "bzip dosyaadı",
+        "Detail": "bzip dosyasını sıkıştırır yada çıkartır."
+      },
+      {
+        "CommandName": "tar cf dosya.tar dosya",
+        "Detail": "dosya'yı dosya.tar a çevirir"
+      },
+      {
+        "CommandName": "tar xf dosya.tar",
+        "Detail": "dosya.tar dosyasını çıkartır"
+      },
+      {
+        "CommandName": "tar czf dosya.tar.gz dosya",
+        "Detail": "dosyayı dosya.taz.gz'ye çevirir"
+      },
+      {
+        "CommandName": "tar xzf dosya.tar.gz",
+        "Detail": "dosya.tar.gz'yi çıkartır"
+      },
+      {
+        "CommandName": "tar cjf dosya.tar.bz2",
+        "Detail": "Bzip2 kullanarak bir tar dosyası oluşturur"
+      },
+      {
+        "CommandName": "tar xjf dosya.tar.bz2",
+        "Detail": "dosya.tar.bz2 dosyasını çıkartır"
+      },
+      {
+        "CommandName": "gzip dosya",
+        "Detail": "dosyayı dosya.gz'ye çevirir"
+      },
+      {
+        "CommandName": "gzip -d dosya.gz",
+        "Detail": "Dosya.gz dosyasını çıkartır"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "categoryName": "FTP Komutları",
+    "categoryThumbnail": "R.drawable.folder",
+    "commands": [
+      {
+        "CommandName": "ftp",
+        "Detail": "Ftp clientine girer"
+      },
+      {
+        "CommandName": "-p",
+        "Detail": "Pasif modu kullanır"
+      },
+      {
+        "CommandName": "-i",
+        "Detail": "Çoklu transfer sırasında istemleri kapatır."
+      },
+      {
+        "CommandName": "tar cjf dosya.tar.bz2",
+        "Detail": "Bzip2 kullanarak bir tar dosyası oluşturur"
+      },
+      {
+        "CommandName": "-v",
+        "Detail": "Verbose modu"
+      },
+      {
+        "CommandName": "-d",
+        "Detail": "Debugging aktif"
+      },
+      {
+        "CommandName": "$",
+        "Detail": "Makro çalıştırır"
+      },
+      {
+        "CommandName": "account[password]",
+        "Detail": "Uzaktan Kumanda ile Gerekli Bir Parola Sağlar"
+      },
+      {
+        "CommandName": "ascii",
+        "Detail": "Dosya aktarımlarını ascii protokollerine göre ayarlar."
+      },
+      {
+        "CommandName": "binary",
+        "Detail": "Image dosyalarını transfer etmek için destek sağlar"
+      },
+      {
+        "CommandName": "bye",
+        "Detail": "FTP'den çıkar"
+      },
+      {
+        "CommandName": "account[password]",
+        "Detail": "Uzaktan Kumanda ile Gerekli Bir Parola Sağlar"
+      },
+      {
+        "CommandName": "dir",
+        "Detail": "Bulunduğunuz dizindeki dosyaları gösterir"
+      },
+      {
+        "CommandName": "open Host",
+        "Detail": "Host'a bağlantı açar"
+      },
+      {
+        "CommandName": "status",
+        "Detail": "FTP serverın durumunu gösterir"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "categoryName": "Ağ Komutları",
+    "categoryThumbnail": "R.drawable.folder",
+    "commands": [
+      {
+        "CommandName": "arp",
+        "Detail": "Ağ kartınızı kontrol eder ve ip adresinizi gösterir"
+      },
+      {
+        "CommandName": "ifconfig",
+        "Detail": "Ağ arayüzünüzü gösterir"
+      },
+      {
+        "CommandName": "ping host",
+        "Detail": "Host adresine ping gönderir"
+      },
+      {
+        "CommandName": "whois domain",
+        "Detail": "Domain bilgilerini getirir"
+      },
+      {
+        "CommandName": "dig domain",
+        "Detail": "Domainin Dns bilgilerini getirir"
+      },
+      {
+        "CommandName": "wget adres",
+        "Detail": "Adresteki dosyayı indirir"
+      },
+      {
+        "CommandName": "wget -c adres",
+        "Detail": "Kesilmiş indirmeye devam eder"
+      },
+      {
+        "CommandName": "netstat",
+        "Detail": "Ağ bağlantılarını gözden geçirir ve soketleri açar"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "categoryName": "Sistem Komutları",
+    "categoryThumbnail":"R.drawable.folder",
+    "commands": [
+      {
+        "CommandName": "date",
+        "Detail": "Tarihi gösterir"
+      },
+      {
+        "CommandName": "date;who",
+        "Detail": "Tarih ve kullanıcıyı gösterir"
+      },
+      {
+        "CommandName": "sudo komut",
+        "Detail": "Komutu yönetici izni ile çalıştırır"
+      },
+      {
+        "CommandName": "sudo su",
+        "Detail": "Terminalde yönetici moduna geçersiniz"
+      },
+      {
+        "CommandName": "cal",
+        "Detail": "Küçük bir takvim gösterir"
+      },
+      {
+        "CommandName": "uptime",
+        "Detail": "Sistemde geçerli saati gösterir"
+      },
+      {
+        "CommandName": "whoami",
+        "Detail": "Giriş yaptığın kullanıcı adını gösterir"
+      },
+      {
+        "CommandName": "fingure kullanıcıadı",
+        "Detail": "Kullanıcı adının bilgilerini gösterir"
+      },
+      {
+        "CommandName": "cat /proc/cpuinfo",
+        "Detail": "CPU bilgilerini gösterir"
+      },
+      {
+        "CommandName": "cat /proc/meminfo",
+        "Detail": "Memory bilgilerini gösterir"
+      },
+      {
+        "CommandName": "df",
+        "Detail": "Disk kullanımını gösterir"
+      },
+      {
+        "CommandName": "free",
+        "Detail": "Memory'i ve kullanılan swapı gösterir"
+      },
+      {
+        "CommandName": "whereis uygulama",
+        "Detail": "Uygulamanın nerede yüklü olduğunu gösterir"
+      },
+      {
+        "CommandName": "which uygulama",
+        "Detail": "Hangi uygulamanın default olarak çalıştığını gösterir"
+      },
+      {
+        "CommandName": "ps aux",
+        "Detail": "Sistemde çalışan uygulamaları gösterir"
+      },
+      {
+        "CommandName": "kill uygulama",
+        "Detail": "Uygulamayı derhal kapatır"
+      },
+      {
+        "CommandName": "sensors",
+        "Detail": "CPU sıcaklıklarını gösterir"
+      },
+      {
+        "CommandName": "uname -harf",
+        "Detail": "-m Makinanın donanımının adını verir.\n-n Nodename i yazar. Nodename sistemin network iletişimi için kullanılır.\n-r Kernel sürümünü gösterir\n-s Sistem ismini yazar\n-v İşletim sisteminin versiyonuu yazar\n-a yukarıdaki bilgilerin tamamını yazar"
+      },
+      {
+        "CommandName": "alias",
+        "Detail": "Bir komuta için kisayollar yaratır"
+      },
+      {
+        "CommandName": "dd",
+        "Detail": "Disk içeriklerini kopyalamak için kullanılır"
+      },
+      {
+        "CommandName": "shutdown",
+        "Detail": "Sistemi kapatmak için kullanılır"
+      },
+      {
+        "CommandName": "apropos",
+        "Detail": "Belli bir kelimeyi man sayfalarinda arar."
+      },
+      {
+        "CommandName": "chfn",
+        "Detail": "Finger bilgilerinde değişiklik yap"
+      },
+      {
+        "CommandName": "chgrp",
+        "Detail": "Grup değiştir"
+      },
+      {
+        "CommandName": "clear",
+        "Detail": "Monitörü temizler"
+      },
+      {
+        "CommandName": "continue",
+        "Detail": "Bir bloku belli bir kosuldan sonra terk etme ve kaldigin yerden devam eder. "
+      },
+      {
+        "CommandName": "deluser kullanıcı",
+        "Detail": "Kullanıcıyı sil "
+      },
+      {
+        "CommandName": "delgroup grup",
+        "Detail": "Grubu sil "
+      },
+      {
+        "CommandName": "groupadd grup",
+        "Detail": "Yeni bir grup oluştur "
+      },
+      {
+        "CommandName": "halt",
+        "Detail": "Sistemi durdur "
+      },
+      {
+        "CommandName": "help",
+        "Detail": "Yardım almak için kullanılır"
+      },
+      {
+        "CommandName": "lsb_release -a",
+        "Detail": "Dağıtımla ilgili bilgiyi görmek için kullanılır"
+      },
+      {
+        "CommandName": "dmidecode",
+        "Detail": "Sistemimizle ilgili bilgi(bios,memory,cache vb) almak için kullanılır.Örn:demicode --type bios, demicode --type memory"
+      },
+      {
+        "CommandName": "free -m",
+        "Detail": "Bellek miktarını görmek için kullanılır."
+      },
+      {
+        "CommandName": "history",
+        "Detail": "Daha önce kullanılmış komut satırlarını görmemize yarar."
+      },
+      {
+        "CommandName": "passwd <kullanıcı_adı>",
+        "Detail": "Kullanıcı adının şifresini değiştirmek için kullanılır."
+      },
+      {
+        "CommandName": "usermod -L <kullanıcı_adı>",
+        "Detail": "Kullanıcı hesabını kilitlemek için kullanılır."
+      },
+      {
+        "CommandName": "usermod -U <kullanıcı_adı>",
+        "Detail": "Kullanıcı hesabını tekrar aktif etmek için kullanılır."
+      },
+      {
+        "CommandName": "chage -E tarih(12.02.2022) <kullanıcı_adı>",
+        "Detail": "Kullanıcı hesabının parola dolum süresini belirlemek için kullanılır. "
+      },
+      {
+        "CommandName": "echo $SHELL",
+        "Detail": "Sisteminizde kullanılan kabuk programını görmek için kullanılır."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "categoryName": "İzin Komutları",
+    "categoryThumbnail":"R.drawable.folder",
+    "commands": [
+      {
+        "CommandName": "chmod +r dosya",
+        "Detail": "Dosyayı okuma izni verir"
+      },
+      {
+        "CommandName": "chmod +w dosya",
+        "Detail": "Dosyaya yazma izni verir"
+      },
+      {
+        "CommandName": "chmod u+rw dosya",
+        "Detail": "Bununla sahip (bu genellikle sizsiniz), my dosyası üzerinde okuma ve yazma iznine sahip olur."
+      },
+      {
+        "CommandName": "chmod a-x dosya",
+        "Detail": "Tüm kullanıcıların dosya üzerindeki çalıştırma izinlerini kaldırıyoruz."
+      },
+      {
+        "CommandName": "chmod u+rw dosya",
+        "Detail": "Bununla sahip (bu genellikle sizsiniz), my dosyası üzerinde okuma ve yazma iznine sahip olur."
+      },
+      {
+        "CommandName": "chmod +x dosya",
+        "Detail": "Dosyaya çalıştırma izni verir"
+      },
+      {
+        "CommandName": "chattr +i dosya",
+        "Detail": "Dosyayı değiştirilemez yapmak için kullanılır"
+      },
+      {
+        "CommandName": "chmod a+r dosya",
+        "Detail": "Tüm kullanıcılara okuma izni verir"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "categoryName": "Git Komutları",
+    "categoryThumbnail":"R.drawable.folder",
+    "commands": [
+      {
+        "CommandName": "git config --global user.name \"Kullanıcı adı\"",
+        "Detail": "Git kullanırken kullanacağınız kullanıcı adını belirler"
+      },
+      {
+        "CommandName": "git config --global email \"mailAdresi\"",
+        "Detail": "Git kullanırken kullanacağınız mail adresini belirler"
+      },
+      {
+        "CommandName": "git log",
+        "Detail": "Yerel depoda yapılmış olan tüm değişiklikleri gösterir"
+      },
+      {
+        "CommandName": "git status",
+        "Detail": "Deponuzda yaptığınız değişiklikleri gösterir"
+      },
+      {
+        "CommandName": "git clone depoadresi",
+        "Detail": "Bulunduğunuz klasöre depoyu kopyalar"
+      },
+      {
+        "CommandName": "git clone kullaniciadi@sunucu:/yol/depo ",
+        "Detail": "Uzak sunucudaki depoyu bulunduğunuz klasöre depolar"
+      },
+      {
+        "CommandName": "git add dosyaadı",
+        "Detail": "Depoya yollamak istediğiniz dosyaları indexe ekler"
+      },
+      {
+        "CommandName": "git add *",
+        "Detail": "Tüm dosyayı indexe ekler"
+      },
+      {
+        "CommandName": "git commit -m \" Teslim mesajı \" ",
+        "Detail": "Yollayacağınız dosyalara mesaj eklersiniz"
+      },
+      {
+        "CommandName": "git push origin master",
+        "Detail": "Uzak depoya indexe eklediğiniz dosyaları yollar"
+      },
+      {
+        "CommandName": "git checkout -b yenidalAdi",
+        "Detail": "Yeni bir dal oluşturur"
+      },
+      {
+        "CommandName": "git checkout master",
+        "Detail": "Master dalına geri dönersin"
+      },
+      {
+        "CommandName": "git branch -d dalAdı",
+        "Detail": "Dalı siler"
+      },
+      {
+        "CommandName": "git push origin dalAdı",
+        "Detail": "Yaptığınız değişiklikleri dala yollar"
+      },
+      {
+        "CommandName": "git pull",
+        "Detail": "En son değişiklikleri çekersiniz"
+      },
+      {
+        "CommandName": "git merge dalAdı",
+        "Detail": "Başka bir dal ile birleştirmek için kullanılır"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "categoryName": "APT Komutları",
+    "categoryThumbnail":"R.drawable.folder",
+    "commands": [
+      {
+        "CommandName": "apt-get update",
+        "Detail": "Uygun durumdaki güncellemeleri yeniler."
+      },
+      {
+        "CommandName": "apt-get upgrade",
+        "Detail": "Tüm paketleri upgrade eder. (en üst sürüme yükseltir)"
+      },
+      {
+        "CommandName": "apt-get dist-upgrade",
+        "Detail": "Debian versiyonunu yükseltir."
+      },
+      {
+        "CommandName": "apt-get install paketadı",
+        "Detail": "Paketi yükler"
+      },
+      {
+        "CommandName": "apt-get install paket1 paket2 paket3 paket4 paket5 paket6 ...",
+        "Detail": "Birden çok paket kurar."
+      },
+      {
+        "CommandName": "sudo apt-get purge paket_adı",
+        "Detail": "Kurulu bir paketi yapılandırma dosyaları ile beraber kaldırır."
+      },
+      {
+        "CommandName": "apt-get remove paketadı",
+        "Detail": "Paketi siler"
+      },
+      {
+        "CommandName": "apt-get autoremove",
+        "Detail": "Eski paketleri siler"
+      },
+      {
+        "CommandName": "apt-get -f install",
+        "Detail": "Hatalı paketleri tamir etmeye çalışır"
+      },
+      {
+        "CommandName": "dpkg -i paket.deb",
+        "Detail": "Paket.deb dosyasını yükler"
+      },
+      {
+        "CommandName": "sudo add-apt-repository yeni_deponun_PPA_adresi",
+        "Detail": "Yeni bir depo ekler"
+      },
+      {
+        "CommandName": "sudo apt-cache show paket_adı",
+        "Detail": "Program hakkında bilgi verir"
+      },
+      {
+        "CommandName": "apt-get help",
+        "Detail": "Apt komutu hakkında bilgi verir"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "categoryName": "RPM Komutları",
+    "categoryThumbnail":"R.drawable.folder",
+    "commands": [
+      {
+        "CommandName": "rpm -ivh <program.rpm>",
+        "Detail": "RPM uzantılı dosyayı kurmak için kullanılır"
+      },
+      {
+        "CommandName": "rpm -ev <program.rpm>",
+        "Detail": "Kurulan paketi sistemden kaldırır"
+      },
+      {
+        "CommandName": "yum install <program_adı>",
+        "Detail": "Depodaki programı kurar."
+      },
+      {
+        "CommandName": "apt-cache search <program_adı> ",
+        "Detail": "Kurmak istediğimiz program depoda varmı yokmu diye arar."
+      },
+      {
+        "CommandName": "apt-cache show <program_adı> ",
+        "Detail": "Kurmak istediğimiz program ile ilgili bilgi almak için kullanılır."
+      },
+      {
+        "CommandName": "yum remove <paket_adı> ",
+        "Detail": "Kurulan paketi sistemden siler."
+      },
+      {
+        "CommandName": "yum update",
+        "Detail": "Sistemi güncellemek için kullanılır."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "categoryName": "Pacman Komutları",
+    "categoryThumbnail":"R.drawable.folder",
+    "commands": [
+      {
+        "CommandName": "pacman-optimize && sync",
+        "Detail": "İndirme hızını optimize eder ve eşleştirir"
+      },
+      {
+        "CommandName": "pacman -Su",
+        "Detail": "Sisteminizi günceller"
+      },
+      {
+        "CommandName": "IgnorePkg=package_name",
+        "Detail": "Bazı paketleri engelleyerek yükseltir"
+      },
+      {
+        "CommandName": "IgnoreGroup=package_group",
+        "Detail": "Paket grubunu göz ardı ederek yükseltir"
+      },
+      {
+        "CommandName": "pacman -S paketadı",
+        "Detail": "Paket yükler"
+      },
+      {
+        "CommandName": "pacman -Sw paketadı",
+        "Detail": "Bir paketi kurulum yapmadan indirir"
+      },
+      {
+        "CommandName": "pacman -U /paket yolu/paketadı.pkg.tar.xz",
+        "Detail": "tar.xz uzantılı yerel paketi yüklemeye yarar"
+      },
+      {
+        "CommandName": "pacman -U http://www.examplepackage/repo/examplepkg.tar.xz",
+        "Detail": "Yansı üzerinden paketi yükler"
+      },
+      {
+        "CommandName": "pacman -R paketadı",
+        "Detail": "Paketi kaldırır"
+      },
+      {
+        "CommandName": "pacman -Rs paketadı",
+        "Detail": "Başka paketlerce kullanılmayan bağımlılıklarıyla birlikte paketi kaldırır"
+      },
+      {
+        "CommandName": "pacman -Rsc paketadı",
+        "Detail": "Bir paketi tüm bağımlılığıyla kaldırır"
+      },
+      {
+        "CommandName": "pacman -Sc $(pacman -Qdtq)",
+        "Detail": "Gereksiz tüm paketleri bellekten boşaltır"
+      },
+      {
+        "CommandName": "pacman -Scc",
+        "Detail": "Paketlerin tutulduğu belleği boşaltır"
+      },
+      {
+        "CommandName": "pacman -Sc",
+        "Detail": "Belleği temizler"
+      },
+      {
+        "CommandName": "pacman -Rs $(pacman -Qtdq)",
+        "Detail": "İhtiyaç duyulmayan paketleri temizler"
+      },
+      {
+        "CommandName": "pacman -Ss paketadı",
+        "Detail": "Açıklamalarıyla birlikte paketi arar"
+      },
+      {
+        "CommandName": "pacman -Qs paketadı",
+        "Detail": "Kurulu paketler içinde arama yapar"
+      },
+      {
+        "CommandName": "pacman -Si paketadı",
+        "Detail": "Paket hakkında bilgi alır"
+      },
+      {
+        "CommandName": "pacman -Ql",
+        "Detail": "Kurulu paketlerin listesini verir"
+      },
+      {
+        "CommandName": "pacman -Qdt",
+        "Detail": "Gerekli olmayan paketleri bağımlılıkları olmaksızın listeler"
+      }
+    ]
+  }
+]

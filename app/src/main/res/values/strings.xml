@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TerminalCommands</string>
+
+
+    <!-- Error -->
+    <string name="error">Error</string>
+    <string name="error_choice_language">Please, choice language from your phone</string>
+
+
+    <!-- Popup -->
+    <string name="popup_ok">Ok</string>
+</resources>
