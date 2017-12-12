@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--Command -->
+
+    <dimen name="command_title_text_size">15sp</dimen>
+    <dimen name="command_detail_text_size">10sp</dimen>
+    <dimen name="command_favourite_widht">20dp</dimen>
+    <dimen name="command_favourite_height">20dp</dimen>
+
+</resources>

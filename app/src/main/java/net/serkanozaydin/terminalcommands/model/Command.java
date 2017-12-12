@@ -8,12 +8,18 @@ import com.google.gson.annotations.SerializedName;
  */
 
 public class Command {
+
+
+
     @SerializedName("CommandName")
     @Expose
     private String commandName;
     @SerializedName("Detail")
     @Expose
     private String detail;
+
+
+
 
     public String getCommandName() {
         return commandName;

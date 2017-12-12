@@ -42,7 +42,21 @@
 
 
     <style name="RowLinearLayoutStyle">
-
         <item name="android:layout_margin">3dp</item>
+    </style>
+
+
+    <style name="CommandTitleStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/command_title_text_size</item>
+    </style>
+
+    <style name="CommandDetailStyle">
+        <item name="android:textSize">@dimen/command_detail_text_size</item>
+    </style>
+
+    <style name="CommandFavouriteStyle">
+        <item name="android:layout_width">@dimen/command_favourite_widht</item>
+        <item name="android:layout_height">@dimen/command_favourite_height</item>
     </style>
 </resources>

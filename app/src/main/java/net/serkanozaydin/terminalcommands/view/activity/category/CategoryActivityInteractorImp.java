@@ -18,13 +18,13 @@ public class CategoryActivityInteractorImp implements CategoryActivityInteractor
             listener.onFail();
         }else {
             if(language.equals(Constant.ENGLISH)){
-                listener.onEnglish();
+                listener.onEnglish(Utils.getDataFromRaw(activity,Constant.ENGLISH));
             }
             else if (language.equals(Constant.TURKISH)){
-                listener.onTurkish();
+                listener.onTurkish(Utils.getDataFromRaw(activity,Constant.TURKISH));
             }
             else {
-                listener.onEnglish();
+                listener.onEnglish(Utils.getDataFromRaw(activity,Constant.ENGLISH));
             }
         }
 

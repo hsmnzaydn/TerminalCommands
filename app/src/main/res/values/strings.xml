@@ -5,6 +5,7 @@
     <!-- Error -->
     <string name="error">Error</string>
     <string name="error_choice_language">Please, choice language from your phone</string>
+    <string name="error_there_is_problem">There is a problem</string>
 
 
     <!-- Popup -->

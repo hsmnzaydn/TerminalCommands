@@ -16,7 +16,7 @@ import net.serkanozaydin.terminalcommands.utility.PopupUtils;
 import net.serkanozaydin.terminalcommands.utility.Utils;
 import net.serkanozaydin.terminalcommands.view.Listener.RecyclerItemClickListener;
 import net.serkanozaydin.terminalcommands.view.activity.command.CommandListActivity;
-import net.serkanozaydin.terminalcommands.view.adapter.CategoryAdapter;
+import net.serkanozaydin.terminalcommands.view.adapter.CategoryRecyclerViewAdapter;
 
 import org.greenrobot.eventbus.EventBus;
 
@@ -29,7 +29,7 @@ import butterknife.ButterKnife;
 public class CategoryListActivity extends AppCompatActivity implements CategoryActivityView {
     private CategoryActivityPresenterImp categoryActivityPresenterImp;
     private ProgressDialog progressDialog;
-    private CategoryAdapter categoryAdapter;
+    private CategoryRecyclerViewAdapter categoryRecyclerViewAdapter;
 
     @BindView(R.id.activity_category_recyclerview)
     RecyclerView recyclerView;
@@ -66,10 +66,9 @@ public class CategoryListActivity extends AppCompatActivity implements CategoryA
         progressDialog.show();
     }
 
-    @SuppressLint("ResourceType")
     @Override
     public void onShowError() {
-        PopupUtils.errorPopup(CategoryListActivity.this, errorTitle, choiceLanguage, getWindow().getDecorView().findViewById(R.layout.activity_category));
+        //PopupUtils.errorPopup(CategoryListActivity.this, errorTitle, choiceLanguage, getWindow().getDecorView().findViewById(R.layout.activity_category));
 
     }
 
@@ -79,14 +78,13 @@ public class CategoryListActivity extends AppCompatActivity implements CategoryA
     }
 
     @Override
-    public void onLoadingDataToList(String language) {
+    public void onLoadingDataToList(final List<Category> listOfCategory) {
 
-        final List<Category> listOfCategory= Utils.getDataFromRaw(CategoryListActivity.this, language);
-        categoryAdapter = new CategoryAdapter(CategoryListActivity.this,listOfCategory);
+        categoryRecyclerViewAdapter = new CategoryRecyclerViewAdapter(CategoryListActivity.this,listOfCategory);
 
         recyclerView.setHasFixedSize(true);
 
-        recyclerView.setAdapter(categoryAdapter);
+        recyclerView.setAdapter(categoryRecyclerViewAdapter);
 
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 

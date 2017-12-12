@@ -2,7 +2,12 @@ package net.serkanozaydin.terminalcommands.view.activity.category;
 
 import android.app.Activity;
 
+import net.serkanozaydin.terminalcommands.model.Category;
 import net.serkanozaydin.terminalcommands.utility.Constant;
+
+import java.util.List;
+
+import butterknife.internal.Utils;
 
 /**
  * Created by hsmnzaydn on 05.12.2017.
@@ -19,23 +24,20 @@ public class CategoryActivityPresenterImp implements CategoryActivityPresenter{
     }
 
     @Override
-    public void onConfiguration(Activity activity) {
+    public void onConfiguration(final Activity activity) {
         view.onShowLoading();
         model.languageConfiguration(activity, new CategoryActivityInteractor.LoadDataListener() {
+
             @Override
-            public void onTurkish() {
-
-                view.onLoadingDataToList(Constant.TURKISH);
+            public void onTurkish(List<Category> categoryList) {
+                view.onLoadingDataToList(categoryList);
                 view.onDismissLoading();
-
             }
 
             @Override
-            public void onEnglish() {
-
-                view.onLoadingDataToList(Constant.ENGLISH);
+            public void onEnglish(List<Category> categoryList) {
+                view.onLoadingDataToList(categoryList);
                 view.onDismissLoading();
-
             }
 
             @Override

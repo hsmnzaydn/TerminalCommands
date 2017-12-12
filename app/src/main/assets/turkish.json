@@ -5,106 +5,132 @@
     "categoryThumbnail": "R.drawable.folder",
     "commands": [
       {
+        "id":0,
         "CommandName": "ls",
         "Detail": "Klasör altındaki dosyaların adlarını verir"
       },
       {
+        "id":1,
         "CommandName": "ls -i",
         "Detail": "Dosyanın inode numarasını gösterir"
       },
       {
+        "id":2,
         "CommandName": "ls -R",
         "Detail": "Yinemeli olarak alt dizinlerin listesini gösterir"
       },
       {
+        "id":3,
         "CommandName": "ls -l",
         "Detail": "Dosya veya dizini gösterir.Dosyanın değiştirilme tarihini ve saatini gösterir."
       },
       {
+        "id":4,
         "CommandName": "ls -lh",
         "Detail": "Okunabilir biçimde dosya boyutlarını gösterir"
       },
       {
+        "id":5,
         "CommandName": "ls -al",
         "Detail": "Gizli dosyalarıda gösterir"
       },
       {
+        "id":6,
         "CommandName": "cd dosyayolu",
         "Detail": "Bulunduğunuz dosya yolunu değiştirir"
       },
       {
+        "id":7,
         "CommandName": "cd ..",
         "Detail": "Bir önceki dosya yoluna gider"
       },
       {
+        "id":8,
         "CommandName": "pwd",
         "Detail": "Bulunduğunuz dizini verir"
       },
       {
+        "id":9,
         "CommandName": "mkdir dizin",
         "Detail": "Yeni bir dizin oluşturur"
       },
       {
+        "id":10,
         "CommandName": "rm dosya",
         "Detail": "Dosyayı siler"
       },
       {
+        "id":11,
         "CommandName": "rm -r dizin",
         "Detail": "Dizini siler"
       },
       {
+        "id":12,
         "CommandName": "rm -f dosya",
         "Detail": "Dosyayı kaldırmaya zorlar"
       },
       {
+        "id":13,
         "CommandName": "rm *",
         "Detail": "Bütün dosyaları siler"
       },
       {
+        "id":14,
         "CommandName": "rm a*",
         "Detail": "a ile başlayan tüm dosyaları siler"
       },
       {
+        "id":15,
         "CommandName": "rm bet*as",
         "Detail": "bet ile başlayıp as ile biten tüm dosyaları siler"
       },
       {
+        "id":16,
         "CommandName": "cp dosyaA dosyaB",
         "Detail": "dosyaA'yi dosyaB'ye kopyalar"
       },
       {
+        "id":17,
         "CommandName": "cp -r dizin1 dizin2",
         "Detail": "dizin1'i dizin2'ye kopyalar.Eğer dizin2 diye dizin yoksa dizin2 adında bir dizin oluşturur."
       },
       {
+        "id":18,
         "CommandName": "mv dosya1 dosya2",
         "Detail": "dosya1 'i dosya2' ye taşır"
       },
       {
+        "id":19,
         "CommandName": "ls -s dosya link",
         "Detail": "Dosyada sembolik bir link oluşturur."
       },
       {
+        "id":20,
         "CommandName": "touch dosya",
         "Detail": "Ya dosya oluşturur yada dosyayı günceller"
       },
       {
+        "id":21,
         "CommandName": "cat>dosya",
         "Detail": "Dosyanın içine input yazar"
       },
       {
+        "id":22,
         "CommandName": "more dosya",
         "Detail": "Dosyanın içeriğini çıktı olarak verir"
       },
       {
+        "id":23,
         "CommandName": "head dosya",
         "Detail": "Dosyanın ilk 10 satırını verir"
       },
       {
+        "id":24,
         "CommandName": "less text",
         "Detail": "Text dosyasının içeriğini çıktılar"
       },
       {
+        "id":25,
         "CommandName": "comm DosyaA DosyaB",
         "Detail": "Iki dosyayi satir satir karsilastırır."
       }
@@ -116,54 +142,67 @@
     "categoryThumbnail": "R.drawable.folder",
     "commands": [
       {
+        "id":0,
         "CommandName": "locate dosya",
         "Detail": "Dosyanın bulunduğu dizindeki diğer dosyaları dizinler"
       },
       {
+        "id":1,
         "CommandName": "find / -name foo",
         "Detail": "Dosyaya verilen isim ile arama yapar"
       },
       {
+        "id":2,
         "CommandName": "find /home -iname dosya.txt",
         "Detail": "Adı dosya.text olan ve ana dizinde hem büyük hem de küçük harf içeren dosyaları bulun."
       },
       {
+        "id":3,
         "CommandName": "find / -type d -name dosya",
         "Detail": "dosya adındaki tüm dosyaları bulur"
       },
       {
+        "id":4,
         "CommandName": "find . -type f -name *.php",
         "Detail": "Dizindeki tüm php dosyalarını bulur"
       },
       {
+        "id":5,
         "CommandName": "find . -type f -perm 0777 - print",
         "Detail": "İzini 777 olan tüm dizinleri bulur"
       },
       {
+        "id":6,
         "CommandName": "find ~ -empty",
         "Detail": "Home dizininin içindeli tüm boş dizinleri bulur"
       },
       {
+        "id":7,
         "CommandName": "find / -atime 50",
         "Detail": "50 gün önce erişilen tüm dosyaları bulur"
       },
       {
+        "id":8,
         "CommandName": "find / -cmin -60",
         "Detail": "1 saat içinde değiştirilen tüm dosyaları bulur"
       },
       {
+        "id":9,
         "CommandName": "find / -mmin -60",
         "Detail": "1 saat içinde modifiye edilen tüm dosyaları bulur"
       },
       {
+        "id":10,
         "CommandName": "find / -size +50M -size -100M",
         "Detail": "50MB ve 100MB arasındaki tüm dosyaları bulur"
       },
       {
+        "id":11,
         "CommandName": "lsattr",
         "Detail": "Sistemde değiştirilemez dosya olup olmadığını bulmak için kullanılır"
       },
       {
+        "id":12,
         "CommandName": "find <dosya_yolu> -perm -4000",
         "Detail": "Dosya yolunda bulunan suid bite sahip dosyaları bulmak için kullanılır"
       }
@@ -175,38 +214,47 @@
     "categoryThumbnail": "R.drawable.folder",
     "commands": [
       {
+        "id":0,
         "CommandName": "bzip dosyaadı",
         "Detail": "bzip dosyasını sıkıştırır yada çıkartır."
       },
       {
+        "id":1,
         "CommandName": "tar cf dosya.tar dosya",
         "Detail": "dosya'yı dosya.tar a çevirir"
       },
       {
+        "id":2,
         "CommandName": "tar xf dosya.tar",
         "Detail": "dosya.tar dosyasını çıkartır"
       },
       {
+        "id":3,
         "CommandName": "tar czf dosya.tar.gz dosya",
         "Detail": "dosyayı dosya.taz.gz'ye çevirir"
       },
       {
+        "id":4,
         "CommandName": "tar xzf dosya.tar.gz",
         "Detail": "dosya.tar.gz'yi çıkartır"
       },
       {
+        "id":5,
         "CommandName": "tar cjf dosya.tar.bz2",
         "Detail": "Bzip2 kullanarak bir tar dosyası oluşturur"
       },
       {
+        "id":6,
         "CommandName": "tar xjf dosya.tar.bz2",
         "Detail": "dosya.tar.bz2 dosyasını çıkartır"
       },
       {
+        "id":7,
         "CommandName": "gzip dosya",
         "Detail": "dosyayı dosya.gz'ye çevirir"
       },
       {
+        "id":8,
         "CommandName": "gzip -d dosya.gz",
         "Detail": "Dosya.gz dosyasını çıkartır"
       }
@@ -218,62 +266,77 @@
     "categoryThumbnail": "R.drawable.folder",
     "commands": [
       {
+        "id":0,
         "CommandName": "ftp",
         "Detail": "Ftp clientine girer"
       },
       {
+        "id":1,
         "CommandName": "-p",
         "Detail": "Pasif modu kullanır"
       },
       {
+        "id":2,
         "CommandName": "-i",
         "Detail": "Çoklu transfer sırasında istemleri kapatır."
       },
       {
+        "id":3,
         "CommandName": "tar cjf dosya.tar.bz2",
         "Detail": "Bzip2 kullanarak bir tar dosyası oluşturur"
       },
       {
+        "id":4,
         "CommandName": "-v",
         "Detail": "Verbose modu"
       },
       {
+        "id":5,
         "CommandName": "-d",
         "Detail": "Debugging aktif"
       },
       {
+        "id":6,
         "CommandName": "$",
         "Detail": "Makro çalıştırır"
       },
       {
+        "id":7,
         "CommandName": "account[password]",
         "Detail": "Uzaktan Kumanda ile Gerekli Bir Parola Sağlar"
       },
       {
+        "id":8,
         "CommandName": "ascii",
         "Detail": "Dosya aktarımlarını ascii protokollerine göre ayarlar."
       },
       {
+        "id":9,
         "CommandName": "binary",
         "Detail": "Image dosyalarını transfer etmek için destek sağlar"
       },
       {
+        "id":10,
         "CommandName": "bye",
         "Detail": "FTP'den çıkar"
       },
       {
+        "id":11,
         "CommandName": "account[password]",
         "Detail": "Uzaktan Kumanda ile Gerekli Bir Parola Sağlar"
       },
       {
+        "id":12,
         "CommandName": "dir",
         "Detail": "Bulunduğunuz dizindeki dosyaları gösterir"
       },
       {
+        "id":13,
         "CommandName": "open Host",
         "Detail": "Host'a bağlantı açar"
       },
       {
+        "id":14,
         "CommandName": "status",
         "Detail": "FTP serverın durumunu gösterir"
       }
