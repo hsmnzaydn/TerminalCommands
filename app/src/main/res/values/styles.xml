@@ -59,4 +59,11 @@
         <item name="android:layout_width">@dimen/command_favourite_widht</item>
         <item name="android:layout_height">@dimen/command_favourite_height</item>
     </style>
+
+    <style name="MultiLineEditText">
+        <item name="android:gravity">top|left</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:lines">6</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
 </resources>

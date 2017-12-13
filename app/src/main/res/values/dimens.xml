@@ -9,4 +9,9 @@
     <dimen name="command_favourite_widht">20dp</dimen>
     <dimen name="command_favourite_height">20dp</dimen>
 
+
+    <!-- Popup -->
+    <dimen name="popup_margin_edit_text">5dp</dimen>
+    <dimen name="popup_margin_top_button">5dp</dimen>
+
 </resources>

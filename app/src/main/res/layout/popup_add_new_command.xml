@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_command_popup_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_popup"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/popup_background"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:hint="@string/popup_add_title"
+                android:id="@+id/popup_add_new_command_title_edit_text"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_border" />
+
+            <EditText
+                android:hint="@string/popup_add_detail"
+                android:id="@+id/popup_add_new_command_detail_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/popup_margin_edit_text"
+                android:background="@drawable/edittext_border"
+               style="@style/MultiLineEditText"/>
+
+            <Button
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/popup_save"
+                android:id="@+id/popup_Add_new_command_save_button"
+                android:layout_marginTop="@dimen/popup_margin_top_button"
+                android:background="@drawable/popup_add_new_command_button"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

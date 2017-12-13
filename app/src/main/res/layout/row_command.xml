@@ -20,21 +20,22 @@
         <TextView
             style="@style/CommandTitleStyle"
             android:text="sadasdasdas"
-            android:layout_width="wrap_content"
+            android:layout_width="310dp"
             android:layout_height="wrap_content"
             android:id="@+id/row_command_title_textview"/>
-        <TextView
-            style="@style/CommandDetailStyle"
-            android:text="sadasdasdsadasdas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/row_command_detail_textview"/>
+
+            <TextView
+                android:id="@+id/row_command_detail_textview"
+                style="@style/CommandDetailStyle"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="sadasdasdsadasdashlkgjhslkjfhgkldhgdjlkhsdjklghjklsddjgkhsdjkhgjksddgjkhsdkjghklhsdjkhgjkdshsjlkghsdlhg" />
         </LinearLayout>
 
             <ImageView
                 style="@style/CommandFavouriteStyle"
                 android:layout_gravity="end"
-                android:background="@mipmap/ic_launcher"
+                android:background="@drawable/action_empty_star"
                 android:id="@+id/row_command_favourite_image_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />

@@ -71,7 +71,12 @@ public class CommandRecylerViewAdapter  extends RecyclerView.Adapter<CommandRecy
 
         holder.commandTitleTextView.setText(command.getCommandName());
         holder.commandDetailTextView.setText(command.getDetail());
-
+        holder.commandFavouriteImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                holder.commandFavouriteImageView.setImageResource(R.drawable.action_fill_star);
+            }
+        });
     }
 
 

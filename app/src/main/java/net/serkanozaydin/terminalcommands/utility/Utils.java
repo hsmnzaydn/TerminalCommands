@@ -2,6 +2,7 @@ package net.serkanozaydin.terminalcommands.utility;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.arch.persistence.room.Room;
 import android.content.Context;
 import android.content.Intent;
 
@@ -9,7 +10,9 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import net.serkanozaydin.terminalcommands.R;
+import net.serkanozaydin.terminalcommands.db.AppDatabase;
 import net.serkanozaydin.terminalcommands.model.Category;
+import net.serkanozaydin.terminalcommands.model.Command;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -91,6 +94,8 @@ public class Utils {
         Intent intent=new Intent(activity,goClass);
         activity.startActivity(intent);
     }
+
+
 
 
 }

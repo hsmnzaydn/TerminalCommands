@@ -20,6 +20,7 @@ public class CommandListActivityInteractorImp implements CommandListActivityInte
 
     private List<Command> commandList;
 
+
     @Override
     public void loadData(Activity activity, LoadDataListener listener) {
         EventBus.getDefault().register(this);
@@ -29,6 +30,7 @@ public class CommandListActivityInteractorImp implements CommandListActivityInte
             listener.onFail(activity.getString(R.string.error_there_is_problem));
         }
         EventBus.getDefault().unregister(this);
+
 
 
     }

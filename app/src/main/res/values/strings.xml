@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TerminalCommands</string>
+    <string name="app_name">Terminal Commands</string>
 
 
     <!-- Error -->
@@ -10,4 +10,7 @@
 
     <!-- Popup -->
     <string name="popup_ok">Ok</string>
+    <string name="popup_save">Save</string>
+    <string name="popup_add_title">Command Title...</string>
+    <string name="popup_add_detail">Command Detail...</string>
 </resources>
