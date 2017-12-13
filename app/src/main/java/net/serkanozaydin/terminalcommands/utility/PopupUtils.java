@@ -98,6 +98,7 @@ public class PopupUtils {
         saveCommandButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                popupAddCommand.dismiss();
                 String title=titleCommandEditText.getText().toString();
                 String detail=detailCommandEditText.getText().toString();
                 DbUtils.saveCommandToDB(activity,new Command(title,detail));

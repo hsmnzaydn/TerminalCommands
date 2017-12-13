@@ -19,6 +19,7 @@ public class Command {
 
 
 
+
     @ColumnInfo(name = "command_name")
     @SerializedName("CommandName")
     @Expose
@@ -33,6 +34,8 @@ public class Command {
         this.commandName = commandName;
         this.detail = detail;
     }
+
+
 
     public String getCommandName() {
         return commandName;

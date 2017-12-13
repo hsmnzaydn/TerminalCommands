@@ -22,14 +22,15 @@ public class DbUtils {
     }
 
     public static void saveCommandToDB(Activity activity,Command command){
-        AppDatabase db=getDb(activity);
-        db.commandDao().insertAll(command);
+        AppDatabase database= Room.databaseBuilder(activity,AppDatabase.class, Constant.DATABASE_NAME)
+                .allowMainThreadQueries()
+                .build();
+        database.commandDao().insertAll(command);
     }
 
 
-    public static List<Command> getAllCommand(Activity activity){
+    public static List<Command> getAllCommands(Activity activity){
         AppDatabase db=getDb(activity);
-
         return db.commandDao().getAllCommands();
     }
 }

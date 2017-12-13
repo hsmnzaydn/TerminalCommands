@@ -8,9 +8,18 @@
     <string name="error_there_is_problem">There is a problem</string>
 
 
+    <!-- Empty -->
+    <string name="empty_command_list">There is no any command, please add a command</string>
+
     <!-- Popup -->
     <string name="popup_ok">Ok</string>
     <string name="popup_save">Save</string>
     <string name="popup_add_title">Command Title...</string>
     <string name="popup_add_detail">Command Detail...</string>
+    <string name="title_activity_category">Category</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 </resources>

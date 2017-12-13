@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import net.serkanozaydin.terminalcommands.R;
 import net.serkanozaydin.terminalcommands.model.Command;
+import net.serkanozaydin.terminalcommands.utility.DbUtils;
 
 import java.util.List;
 
@@ -75,6 +76,7 @@ public class CommandRecylerViewAdapter  extends RecyclerView.Adapter<CommandRecy
             @Override
             public void onClick(View view) {
                 holder.commandFavouriteImageView.setImageResource(R.drawable.action_fill_star);
+                DbUtils.saveCommandToDB(activity,command);
             }
         });
     }
