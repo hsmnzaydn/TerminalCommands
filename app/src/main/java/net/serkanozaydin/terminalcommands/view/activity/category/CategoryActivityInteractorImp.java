@@ -1,8 +1,10 @@
 package net.serkanozaydin.terminalcommands.view.activity.category;
 
 import android.app.Activity;
+import android.view.View;
 
 import net.serkanozaydin.terminalcommands.utility.Constant;
+import net.serkanozaydin.terminalcommands.utility.PopupUtils;
 import net.serkanozaydin.terminalcommands.utility.Utils;
 
 /**
@@ -29,4 +31,11 @@ public class CategoryActivityInteractorImp implements CategoryActivityInteractor
         }
 
     }
+
+    @Override
+    public void openSaveCommandPopup(Activity activity, View view) {
+        PopupUtils.addCommand(activity,view);
+    }
+
+
 }

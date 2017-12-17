@@ -1,6 +1,7 @@
 package net.serkanozaydin.terminalcommands.view.activity.category;
 
 import android.app.Activity;
+import android.view.View;
 
 /**
  * Created by hsmnzaydn on 05.12.2017.
@@ -8,6 +9,8 @@ import android.app.Activity;
 
 public interface CategoryActivityPresenter {
 
-    void onConfiguration(Activity activity);
+    void onConfiguration();
+
+    void onOpenPopup(View view);
 
 }

@@ -9,7 +9,7 @@ import net.serkanozaydin.terminalcommands.model.Command;
  * Created by hsmnzaydn on 13.12.2017.
  */
 
-@Database(entities = {Command.class},version = 1)
+@Database(entities = {Command.class},version = 3)
 public abstract class AppDatabase extends RoomDatabase{
 
     public abstract CommandDao commandDao();

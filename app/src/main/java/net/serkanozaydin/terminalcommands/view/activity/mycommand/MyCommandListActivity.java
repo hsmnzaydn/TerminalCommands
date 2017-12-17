@@ -12,8 +12,10 @@ import android.widget.TextView;
 import net.serkanozaydin.terminalcommands.R;
 import net.serkanozaydin.terminalcommands.model.Command;
 import net.serkanozaydin.terminalcommands.utility.Utils;
-import net.serkanozaydin.terminalcommands.view.activity.command.CommandListActivity;
-import net.serkanozaydin.terminalcommands.view.adapter.CommandRecylerViewAdapter;
+import net.serkanozaydin.terminalcommands.view.adapter.CommandRecyclerViewAdapter;
+import net.serkanozaydin.terminalcommands.view.adapter.MyCommandRecyclerViewAdapter;
+
+import org.greenrobot.eventbus.EventBus;
 
 import java.util.List;
 
@@ -28,7 +30,7 @@ private ProgressDialog progressDialog;
     RecyclerView recyclerView;
 @BindView(R.id.activity_my_command_list_empty_text)
     TextView emptyTextView;
-    private CommandRecylerViewAdapter adapter;
+    private MyCommandRecyclerViewAdapter adapter;
 
 
     @Override
@@ -63,7 +65,7 @@ private ProgressDialog progressDialog;
     @Override
     public void onLoadDataToList(List<Command> commandList) {
 
-        adapter = new CommandRecylerViewAdapter(MyCommandListActivity.this, commandList);
+        adapter = new MyCommandRecyclerViewAdapter(MyCommandListActivity.this, commandList);
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(adapter);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
@@ -71,6 +73,7 @@ private ProgressDialog progressDialog;
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         layoutManager.scrollToPosition(0);
         recyclerView.setLayoutManager(layoutManager);
+
     }
 
     @Override

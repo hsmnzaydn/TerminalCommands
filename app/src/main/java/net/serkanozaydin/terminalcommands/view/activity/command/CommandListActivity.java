@@ -11,7 +11,7 @@ import net.serkanozaydin.terminalcommands.R;
 import net.serkanozaydin.terminalcommands.model.Command;
 import net.serkanozaydin.terminalcommands.utility.PopupUtils;
 import net.serkanozaydin.terminalcommands.utility.Utils;
-import net.serkanozaydin.terminalcommands.view.adapter.CommandRecylerViewAdapter;
+import net.serkanozaydin.terminalcommands.view.adapter.CommandRecyclerViewAdapter;
 
 import java.util.List;
 
@@ -24,7 +24,7 @@ public class CommandListActivity extends AppCompatActivity implements CommandLis
     @BindView(R.id.activity_command_recyclerview)
     RecyclerView recyclerView;
 
-    private CommandRecylerViewAdapter adapter;
+    private CommandRecyclerViewAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +45,7 @@ public class CommandListActivity extends AppCompatActivity implements CommandLis
     @Override
     public void getData(List<Command> listOfCommand) {
         recyclerView=findViewById(R.id.activity_command_recyclerview);
-        adapter = new CommandRecylerViewAdapter(CommandListActivity.this, listOfCommand);
+        adapter = new CommandRecyclerViewAdapter(CommandListActivity.this, listOfCommand);
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(adapter);
         recyclerView.setItemAnimator(new DefaultItemAnimator());

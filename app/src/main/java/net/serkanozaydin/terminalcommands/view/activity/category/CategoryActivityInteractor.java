@@ -1,6 +1,7 @@
 package net.serkanozaydin.terminalcommands.view.activity.category;
 
 import android.app.Activity;
+import android.view.View;
 
 import net.serkanozaydin.terminalcommands.model.Category;
 
@@ -14,6 +15,7 @@ public interface CategoryActivityInteractor {
 
 
     void languageConfiguration(Activity activity, LoadDataListener listener);
+    void openSaveCommandPopup(Activity activity, View view);
 
 
     interface LoadDataListener {

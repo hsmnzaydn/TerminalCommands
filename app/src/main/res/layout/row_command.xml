@@ -33,6 +33,7 @@
         </LinearLayout>
 
             <ImageView
+
                 style="@style/CommandFavouriteStyle"
                 android:layout_gravity="end"
                 android:background="@drawable/action_empty_star"

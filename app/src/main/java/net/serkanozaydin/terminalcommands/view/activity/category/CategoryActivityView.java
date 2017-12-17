@@ -1,5 +1,7 @@
 package net.serkanozaydin.terminalcommands.view.activity.category;
 
+import android.view.View;
+
 import net.serkanozaydin.terminalcommands.model.Category;
 
 import java.util.List;
@@ -14,6 +16,7 @@ public interface CategoryActivityView {
     void onShowError();
     void onDismissLoading();
     void onLoadingDataToList(List<Category> listOfCategory);
+    void onOpenSaveCommandPopup(View view);
 
 
 

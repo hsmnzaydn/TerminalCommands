@@ -7,6 +7,8 @@ import android.arch.persistence.room.PrimaryKey;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.util.List;
+
 /**
  * Created by hsmnzaydn on 06.12.2017.
  */
@@ -17,8 +19,7 @@ public class Command {
     @PrimaryKey(autoGenerate = true)
     public int id;
 
-
-
+    private Boolean isFavourite;
 
     @ColumnInfo(name = "command_name")
     @SerializedName("CommandName")
@@ -36,6 +37,13 @@ public class Command {
     }
 
 
+    public Boolean getFavourite() {
+        return isFavourite;
+    }
+
+    public void setFavourite(Boolean favourite) {
+        isFavourite = favourite;
+    }
 
     public String getCommandName() {
         return commandName;
@@ -52,4 +60,18 @@ public class Command {
     public void setDetail(String detail) {
         this.detail = detail;
     }
+
+
+    public void setFavourite(List<Command> commandList){
+        for (Command command:commandList) {
+            if(getCommandName().equals(command.getCommandName())){
+                setFavourite(true);
+            }
+        }
+
+
+    }
+
+
+
 }

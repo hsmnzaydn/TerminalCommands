@@ -1,7 +1,6 @@
 package net.serkanozaydin.terminalcommands.view.adapter;
 
 import android.app.Activity;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,17 +17,19 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+import static net.serkanozaydin.terminalcommands.utility.DbUtils.getAllCommands;
+
 /**
  * Created by hsmnzaydn on 12/12/17.
  */
 
-public class CommandRecylerViewAdapter  extends RecyclerView.Adapter<CommandRecylerViewAdapter.ViewHolder> {
+public class CommandRecyclerViewAdapter extends RecyclerView.Adapter<CommandRecyclerViewAdapter.ViewHolder> {
 
     private Activity activity;
     private List<Command> listOfCommand;
 
 
-    public CommandRecylerViewAdapter(Activity activity, List<Command> listOfCommand) {
+    public CommandRecyclerViewAdapter(Activity activity, List<Command> listOfCommand) {
 
         this.listOfCommand = listOfCommand;
         this.activity = activity;
@@ -36,7 +37,6 @@ public class CommandRecylerViewAdapter  extends RecyclerView.Adapter<CommandRecy
 
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-
 
 
         @BindView(R.id.row_command_title_textview)
@@ -52,32 +52,52 @@ public class CommandRecylerViewAdapter  extends RecyclerView.Adapter<CommandRecy
             ButterKnife.bind(this, itemView);
 
 
-
         }
     }
 
 
     @Override
-    public CommandRecylerViewAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public CommandRecyclerViewAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_command, parent, false);
 
-        CommandRecylerViewAdapter.ViewHolder view_holder = new CommandRecylerViewAdapter.ViewHolder(v);
+        CommandRecyclerViewAdapter.ViewHolder view_holder = new CommandRecyclerViewAdapter.ViewHolder(v);
         return view_holder;
     }
 
     @Override
-    public void onBindViewHolder(final CommandRecylerViewAdapter.ViewHolder holder, final int position) {
-        Command command=listOfCommand.get(position);
-
+    public void onBindViewHolder(final CommandRecyclerViewAdapter.ViewHolder holder, final int position) {
+        Command command = listOfCommand.get(position);
+        command.setFavourite(false);
         holder.commandTitleTextView.setText(command.getCommandName());
         holder.commandDetailTextView.setText(command.getDetail());
+
+        List<Command> commands = DbUtils.getAllCommands(activity);
+
+        command.setFavourite(commands);
+        if (command.getFavourite() != null) {
+            if (command.getFavourite()) {
+                holder.commandFavouriteImageView.setImageResource(R.drawable.action_fill_star);
+                holder.setIsRecyclable(false);
+            }
+        }
+
         holder.commandFavouriteImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                holder.commandFavouriteImageView.setImageResource(R.drawable.action_fill_star);
-                DbUtils.saveCommandToDB(activity,command);
+                if (command.getFavourite()) {
+                    command.setFavourite(false);
+                    DbUtils.deleteCommand(activity, command);
+                } else {
+                    command.setFavourite(true);
+                    holder.commandFavouriteImageView.setImageResource(R.drawable.action_fill_star);
+                    holder.setIsRecyclable(false);
+                    DbUtils.saveCommandToDB(activity, new Command(command.getCommandName(), command.getDetail()));
+                }
+
+
             }
+
         });
     }
 

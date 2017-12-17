@@ -1,13 +1,11 @@
 package net.serkanozaydin.terminalcommands.view.activity.category;
 
 import android.app.Activity;
+import android.view.View;
 
 import net.serkanozaydin.terminalcommands.model.Category;
-import net.serkanozaydin.terminalcommands.utility.Constant;
 
 import java.util.List;
-
-import butterknife.internal.Utils;
 
 /**
  * Created by hsmnzaydn on 05.12.2017.
@@ -17,14 +15,16 @@ public class CategoryActivityPresenterImp implements CategoryActivityPresenter{
 
     private CategoryActivityInteractor model;
     private CategoryActivityView view;
+    private Activity activity;
 
-    public CategoryActivityPresenterImp(CategoryActivityInteractor model, CategoryActivityView view) {
+    public CategoryActivityPresenterImp(Activity activity,CategoryActivityInteractor model, CategoryActivityView view) {
         this.model = model;
         this.view = view;
+        this.activity=activity;
     }
 
     @Override
-    public void onConfiguration(final Activity activity) {
+    public void onConfiguration() {
         view.onShowLoading();
         model.languageConfiguration(activity, new CategoryActivityInteractor.LoadDataListener() {
 
@@ -49,5 +49,10 @@ public class CategoryActivityPresenterImp implements CategoryActivityPresenter{
             }
         });
 
+    }
+
+    @Override
+    public void onOpenPopup( View view) {
+        model.openSaveCommandPopup(activity,view);
     }
 }

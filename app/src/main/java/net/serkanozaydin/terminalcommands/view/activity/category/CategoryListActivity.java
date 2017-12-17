@@ -62,18 +62,16 @@ public class CategoryListActivity extends AppCompatActivity implements CategoryA
 
 
         ButterKnife.bind(this);
-        categoryActivityPresenterImp = new CategoryActivityPresenterImp(new CategoryActivityInteractorImp(), this);
-        categoryActivityPresenterImp.onConfiguration(CategoryListActivity.this);
-
+        categoryActivityPresenterImp = new CategoryActivityPresenterImp(CategoryListActivity.this,new CategoryActivityInteractorImp(), this);
+        categoryActivityPresenterImp.onConfiguration();
 
 
         addCommandCategory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                PopupUtils.addCommand(CategoryListActivity.this,view);
+                onOpenSaveCommandPopup(view);
             }
         });
-
 
 
 
@@ -97,10 +95,14 @@ public class CategoryListActivity extends AppCompatActivity implements CategoryA
     }
 
 
+
+
     @Override
     public void onShowLoading() {
         progressDialog.show();
     }
+
+
 
     @SuppressLint("ResourceType")
     @Override
@@ -141,6 +143,11 @@ public class CategoryListActivity extends AppCompatActivity implements CategoryA
         );
 
 
+    }
+
+    @Override
+    public void onOpenSaveCommandPopup(View view) {
+        categoryActivityPresenterImp.onOpenPopup(view);
     }
 
 

@@ -26,6 +26,7 @@ public class CommandListActivityInteractorImp implements CommandListActivityInte
         EventBus.getDefault().register(this);
         if (commandList != null) {
             listener.onSuccess(commandList);
+            EventBus.getDefault().removeAllStickyEvents();
         } else {
             listener.onFail(activity.getString(R.string.error_there_is_problem));
         }
