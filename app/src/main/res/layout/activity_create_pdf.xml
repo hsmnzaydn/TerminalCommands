@@ -13,6 +13,10 @@
         android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
 
     <Button
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/popup_add_new_command_button"
         android:id="@+id/activity_create_pdf_button"
         android:layout_gravity="bottom"
         android:text="@string/action_transfer_pdf"

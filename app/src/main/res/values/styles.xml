@@ -35,15 +35,20 @@
 
 
     <style name="RowCardViewStyle" parent="CardView">
-        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_margin">3dp</item>
         <item name="cardCornerRadius">10dp</item>
     </style>
 
 
     <style name="RowLinearLayoutStyle">
-        <item name="android:layout_margin">3dp</item>
+        <item name="android:layout_margin">1dp</item>
     </style>
 
+    <style name="CategoryTitleStyle">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/category_title_margain_left</item>
+        <item name="android:textSize">@dimen/category_title_size</item>
+    </style>
 
     <style name="CommandTitleStyle">
         <item name="android:textStyle">bold</item>
@@ -72,7 +77,7 @@
         <item name="android:layout_gravity">center</item>
         <item name="android:textColor">@color/colorPrimary</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">15sp</item>
     </style>
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>

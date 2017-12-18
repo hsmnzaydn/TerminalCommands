@@ -2,7 +2,7 @@
   {
     "id": 0,
     "categoryName": "Dosya Komutları",
-    "categoryThumbnail": "R.drawable.folder",
+    "categoryThumbnail": "action_file",
     "commands": [
       {
         "id":0,
@@ -139,7 +139,7 @@
   {
     "id": 1,
     "categoryName": "Arama Komutları",
-    "categoryThumbnail": "R.drawable.folder",
+    "categoryThumbnail": "action_search",
     "commands": [
       {
         "id":0,
@@ -211,7 +211,7 @@
   {
     "id": 2,
     "categoryName": "Sıkıştırma Komutları",
-    "categoryThumbnail": "R.drawable.folder",
+    "categoryThumbnail": "action_zip",
     "commands": [
       {
         "id":0,
@@ -263,7 +263,7 @@
   {
     "id": 3,
     "categoryName": "FTP Komutları",
-    "categoryThumbnail": "R.drawable.folder",
+    "categoryThumbnail": "action_ftp",
     "commands": [
       {
         "id":0,
@@ -345,7 +345,7 @@
   {
     "id": 4,
     "categoryName": "Ağ Komutları",
-    "categoryThumbnail": "R.drawable.folder",
+    "categoryThumbnail": "action_network",
     "commands": [
       {
         "CommandName": "arp",
@@ -384,7 +384,7 @@
   {
     "id": 5,
     "categoryName": "Sistem Komutları",
-    "categoryThumbnail":"R.drawable.folder",
+    "categoryThumbnail":"action_setting",
     "commands": [
       {
         "CommandName": "date",
@@ -551,7 +551,7 @@
   {
     "id": 6,
     "categoryName": "İzin Komutları",
-    "categoryThumbnail":"R.drawable.folder",
+    "categoryThumbnail":"action_permission",
     "commands": [
       {
         "CommandName": "chmod +r dosya",
@@ -590,7 +590,7 @@
   {
     "id": 7,
     "categoryName": "Git Komutları",
-    "categoryThumbnail":"R.drawable.folder",
+    "categoryThumbnail":"action_git",
     "commands": [
       {
         "CommandName": "git config --global user.name \"Kullanıcı adı\"",
@@ -661,7 +661,7 @@
   {
     "id": 8,
     "categoryName": "APT Komutları",
-    "categoryThumbnail":"R.drawable.folder",
+    "categoryThumbnail":"action_apt",
     "commands": [
       {
         "CommandName": "apt-get update",
@@ -720,7 +720,7 @@
   {
     "id": 9,
     "categoryName": "RPM Komutları",
-    "categoryThumbnail":"R.drawable.folder",
+    "categoryThumbnail":"action_rpm",
     "commands": [
       {
         "CommandName": "rpm -ivh <program.rpm>",
@@ -755,7 +755,7 @@
   {
     "id": 10,
     "categoryName": "Pacman Komutları",
-    "categoryThumbnail":"R.drawable.folder",
+    "categoryThumbnail":"action_pacman",
     "commands": [
       {
         "CommandName": "pacman-optimize && sync",

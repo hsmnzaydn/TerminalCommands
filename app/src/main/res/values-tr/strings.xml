@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Terminal Komutları</string>
+    <string name="error">Hata</string>
+    <string name="error_choice_language">Lütfen telefonunuzdan bir dil seçiniz</string>
+    <string name="error_there_is_problem">Bir problem var</string>
+    <string name="nav_database">Komutlarım</string>
+    <string name="nav_create_pdf">Pdf Oluştur</string>
+    <string name="nav_open_source_project">Bu proje açık kaynaklı bir projedir</string>
+    <string name="empty_command_list">Komut bulunmamaktadır, lütfen komut ekleyin</string>
+    <string name="empty_select_a_category">Lütfen bir kategori seçiniz</string>
+    <string name="popup_ok">Tamam</string>
+    <string name="popup_save">Kaydet</string>
+    <string name="popup_add_title">Komut Başlığı</string>
+    <string name="popup_add_detail">Komut Özelliği</string>
+    <string name="title_activity_category">Kategori</string>
+    <string name="action_transfer_pdf">PDF\'e Aktar</string>
+</resources>

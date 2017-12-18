@@ -47,7 +47,7 @@ public class CreatePdfActivityPresenterImp implements CreatePdfActivityPresenter
     public void onSaveToPdf(List<Category> categoryList) {
         EventBus.getDefault().postSticky(new CategoryListEvent(categoryList));
         view.onShowProgress();
-            model.onSaveToPdf(activity, new CreatePdfActivityInteractor.ListenerSaveToPdf() {
+            model.onSaveToPdf(activity,categoryList, new CreatePdfActivityInteractor.ListenerSaveToPdf() {
                 @Override
                 public void onSuccessSaveToPdf() {
 

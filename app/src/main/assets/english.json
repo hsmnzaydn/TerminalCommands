@@ -2,7 +2,7 @@
     {
         "id":0,
         "categoryName":"File Commands",
-        "categoryThumbnail":"R.drawable.folder",
+        "categoryThumbnail":"action_file",
         "commands":[
             {
                 "CommandName": "ls",
@@ -113,7 +113,7 @@
     {
         "id":1,
         "categoryName":"Search Commands",
-      "categoryThumbnail":"R.drawable.folder",
+      "categoryThumbnail":"action_search",
         "commands":[
             {
                 "CommandName": "locate fileA",
@@ -172,7 +172,7 @@
     {
         "id":2,
         "categoryName":"Compression Commands",
-      "categoryThumbnail":"R.drawable.folder",
+      "categoryThumbnail":"action_zip",
         "commands":[
             {
                 "CommandName": "bzip filename",
@@ -215,7 +215,7 @@
     {
         "id":3,
         "categoryName":"FTP Commands",
-      "categoryThumbnail":"R.drawable.folder",
+      "categoryThumbnail":"action_ftp",
         "commands":[
             {
                 "CommandName": "ftp",
@@ -274,7 +274,7 @@
     {
         "id":4,
         "categoryName":"Network Commands",
-      "categoryThumbnail":"R.drawable.folder",
+      "categoryThumbnail":"action_network",
         "commands":[
             {
                 "CommandName": "arp",
@@ -313,7 +313,7 @@
     {
         "id":5,
         "categoryName":"System Commands",
-      "categoryThumbnail":"R.drawable.folder",
+      "categoryThumbnail":"action_setting",
         "commands":[
             {
                 "CommandName": "date",
@@ -480,7 +480,7 @@
     {
         "id":6,
         "categoryName":"Permission Commands",
-      "categoryThumbnail":"R.drawable.folder",
+      "categoryThumbnail":"action_permission",
         "commands":[
             {
                 "CommandName": "chmod +r file",
@@ -519,7 +519,7 @@
     {
         "id":7,
         "categoryName":"Git Commands",
-      "categoryThumbnail":"R.drawable.folder",
+      "categoryThumbnail":"action_git",
         "commands":[
             {
                 "CommandName": "git config --global user.name \"User name\"",
@@ -590,7 +590,7 @@
     {
         "id":8,
         "categoryName":"APT Commands",
-      "categoryThumbnail":"R.drawable.folder",
+      "categoryThumbnail":"action_apt",
         "commands":[
             {
                 "CommandName": "apt-get update",
@@ -649,7 +649,7 @@
     {
         "id":9,
         "categoryName":"Pacman Commands",
-      "categoryThumbnail":"R.drawable.folder",
+      "categoryThumbnail":"action_pacman",
         "commands":[
             {
                 "CommandName": "pacman-optimize && sync",

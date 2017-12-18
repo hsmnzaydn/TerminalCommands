@@ -13,7 +13,7 @@ import java.util.List;
 
 public interface CreatePdfActivityInteractor {
     void onGetDataFromJson(Activity activity,ListenerGetDataFromJson listenerGetDataFromJson);
-    void onSaveToPdf(Activity activity,ListenerSaveToPdf listener);
+    void onSaveToPdf(Activity activity,List<Category> categoryList,ListenerSaveToPdf listener);
 
     interface ListenerGetDataFromJson{
         void onSuccessGetData(List<Category> commandList);

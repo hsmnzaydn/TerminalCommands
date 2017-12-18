@@ -22,7 +22,6 @@ import java.util.List;
 
 public class CreatePdfActivityInteractorImp implements CreatePdfActivityInteractor {
 
-    private List<Category> categoryList;
     @Override
     public void onGetDataFromJson(Activity activity, ListenerGetDataFromJson listenerGetDataFromJson) {
         String language=Utils.getCurrentLanguage();
@@ -41,8 +40,7 @@ public class CreatePdfActivityInteractorImp implements CreatePdfActivityInteract
     }
 
     @Override
-    public void onSaveToPdf(Activity activity, ListenerSaveToPdf listener) {
-        EventBus.getDefault().register(this);
+    public void onSaveToPdf(Activity activity, List<Category> categoryList,ListenerSaveToPdf listener) {
         if(categoryList.size() ==0 ){
             listener.onEmptyList(activity.getString(R.string.empty_select_a_category));
         }
@@ -70,12 +68,7 @@ public class CreatePdfActivityInteractorImp implements CreatePdfActivityInteract
 
 
 
-        EventBus.getDefault().unregister(this);
     }
 
 
-    @Subscribe(sticky = true,threadMode = ThreadMode.MAIN)
-    public void getCategoryListEvent(CategoryListEvent categoryListEvent){
-        categoryList= categoryListEvent.getListOfCategory();
-    }
 }

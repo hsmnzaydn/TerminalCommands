@@ -18,13 +18,12 @@
 
             <ImageView
                 android:id="@+id/row_category_thumbnail"
-                android:background="@mipmap/ic_launcher"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
 
             <TextView
+                style="@style/CategoryTitleStyle"
                 android:id="@+id/row_category_name_textview"
-                android:layout_gravity="center"
                 android:text="asdsadasdsasadsa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
