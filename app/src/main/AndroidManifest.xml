@@ -16,10 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.activity.category.CategoryListActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".view.activity.category.CategoryListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".view.activity.command.CommandListActivity" />
         <activity android:name=".view.activity.mycommand.MyCommandListActivity" />
+        <activity android:name=".view.activity.createpdf.CreatePdfActivity"></activity>
     </application>
 
 </manifest>

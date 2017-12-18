@@ -68,11 +68,7 @@ public class Utils {
         Type token = new TypeToken<Collection<Category>>() {}.getType();
         List<Category> result = gson.fromJson(json, token);
 
-
-
-
     return result;
-
     }
 
 

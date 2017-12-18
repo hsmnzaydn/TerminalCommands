@@ -25,6 +25,7 @@ import net.serkanozaydin.terminalcommands.utility.PopupUtils;
 import net.serkanozaydin.terminalcommands.utility.Utils;
 import net.serkanozaydin.terminalcommands.view.Listener.RecyclerItemClickListener;
 import net.serkanozaydin.terminalcommands.view.activity.command.CommandListActivity;
+import net.serkanozaydin.terminalcommands.view.activity.createpdf.CreatePdfActivity;
 import net.serkanozaydin.terminalcommands.view.activity.mycommand.MyCommandListActivity;
 import net.serkanozaydin.terminalcommands.view.adapter.CategoryRecyclerViewAdapter;
 
@@ -189,21 +190,13 @@ public class CategoryListActivity extends AppCompatActivity implements CategoryA
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_my_command) {
             Utils.changeActivity(CategoryListActivity.this, MyCommandListActivity.class);
-
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
+        }
+        else if(id == R.id.nav_create_pdf){
+            Utils.changeActivity(CategoryListActivity.this, CreatePdfActivity.class);
 
         }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;

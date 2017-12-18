@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="net.serkanozaydin.terminalcommands.view.activity.createpdf.CreatePdfActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_create_pdf_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/activity_create_pdf_button"
+        android:layout_gravity="bottom"
+        android:text="@string/action_transfer_pdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</FrameLayout>
