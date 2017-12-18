@@ -1,7 +1,6 @@
 package net.serkanozaydin.terminalcommands.view.activity.mycommand;
 
 import android.app.ProgressDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -12,17 +11,15 @@ import android.widget.TextView;
 import net.serkanozaydin.terminalcommands.R;
 import net.serkanozaydin.terminalcommands.model.Command;
 import net.serkanozaydin.terminalcommands.utility.Utils;
-import net.serkanozaydin.terminalcommands.view.adapter.CommandRecyclerViewAdapter;
+import net.serkanozaydin.terminalcommands.controller.ActivityController;
 import net.serkanozaydin.terminalcommands.view.adapter.MyCommandRecyclerViewAdapter;
-
-import org.greenrobot.eventbus.EventBus;
 
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class MyCommandListActivity extends AppCompatActivity implements MyCommandListActivityView{
+public class MyCommandListActivity extends ActivityController implements MyCommandListActivityView{
 private MyCommandListActivityPresenterImp myCommandListActivityPresenterImp;
 private ProgressDialog progressDialog;
 

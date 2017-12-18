@@ -10,7 +10,7 @@
     <!--Navigation Menu -->
     <string name="nav_database">My Commands</string>
     <string name="nav_create_pdf">Create PDF</string>
-    <string name="nav_open_source_project">This project is open source project</string>
+    <string name="nav_open_source_project">This project is an open source project</string>
     <string name="nav_github_link">http://www.github.com/hsmnzaydn</string>
 
     <!-- Empty -->

@@ -1,7 +1,6 @@
 package net.serkanozaydin.terminalcommands.view.activity.command;
 
 import android.app.ProgressDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -11,13 +10,14 @@ import net.serkanozaydin.terminalcommands.R;
 import net.serkanozaydin.terminalcommands.model.Command;
 import net.serkanozaydin.terminalcommands.utility.PopupUtils;
 import net.serkanozaydin.terminalcommands.utility.Utils;
+import net.serkanozaydin.terminalcommands.controller.ActivityController;
 import net.serkanozaydin.terminalcommands.view.adapter.CommandRecyclerViewAdapter;
 
 import java.util.List;
 
 import butterknife.BindView;
 
-public class CommandListActivity extends AppCompatActivity implements CommandListActivityView {
+public class CommandListActivity extends ActivityController implements CommandListActivityView {
     private CommandListActivityPresenterImp presenterImp;
     private ProgressDialog progressDialog;
 

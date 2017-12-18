@@ -36,8 +36,13 @@ public class Utils {
 
     public static List<Category> getDataFromRaw(Activity activity,String language) {
         InputStream is = null;
+        try {
+            is = activity.getAssets().open("english.json");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-        if (language.equals(Constant.ENGLISH)) {
+        if (language.equals(Constant.ENGLISH) ) {
             try {
                 is = activity.getAssets().open("english.json");
             } catch (IOException e) {

@@ -26,14 +26,17 @@ public class CreatePdfActivityInteractorImp implements CreatePdfActivityInteract
     @Override
     public void onGetDataFromJson(Activity activity, ListenerGetDataFromJson listenerGetDataFromJson) {
         String language=Utils.getCurrentLanguage();
-        if(language.equals(Constant.TURKISH)){
-            listenerGetDataFromJson.onSuccessGetData(Utils.getDataFromRaw(activity,language));
-        }
-        else if(language.equals(Constant.ENGLISH)){
-            listenerGetDataFromJson.onSuccessGetData(Utils.getDataFromRaw(activity,language));
+        if(language == null){
+            listenerGetDataFromJson.onFailGetData(activity.getString(R.string.error_choice_language));
         }
         else {
-            listenerGetDataFromJson.onSuccessGetData(Utils.getDataFromRaw(activity,language));
+            if (language.equals(Constant.TURKISH)) {
+                listenerGetDataFromJson.onSuccessGetData(Utils.getDataFromRaw(activity, language));
+            } else if (language.equals(Constant.ENGLISH)) {
+                listenerGetDataFromJson.onSuccessGetData(Utils.getDataFromRaw(activity, language));
+            } else {
+                listenerGetDataFromJson.onSuccessGetData(Utils.getDataFromRaw(activity, language));
+            }
         }
     }
 

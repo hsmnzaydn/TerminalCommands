@@ -21,7 +21,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".view.activity.command.CommandListActivity" />
         <activity android:name=".view.activity.mycommand.MyCommandListActivity" />
-        <activity android:name=".view.activity.createpdf.CreatePdfActivity"></activity>
+        <activity android:name=".view.activity.createpdf.CreatePdfActivity" />
     </application>
 
 </manifest>

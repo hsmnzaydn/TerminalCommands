@@ -9,6 +9,7 @@
             android:icon="@drawable/action_database"
             android:title="@string/nav_database" />
         <item
+            android:icon="@drawable/action_pdf"
             android:id="@+id/nav_create_pdf"
             android:title="@string/nav_create_pdf" />
 

@@ -1,12 +1,10 @@
 package net.serkanozaydin.terminalcommands.view.activity.createpdf;
 
 import android.app.ProgressDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -14,13 +12,12 @@ import android.widget.Toast;
 import net.serkanozaydin.terminalcommands.R;
 import net.serkanozaydin.terminalcommands.model.Category;
 import net.serkanozaydin.terminalcommands.utility.Utils;
-import net.serkanozaydin.terminalcommands.view.activity.category.CategoryListActivity;
-import net.serkanozaydin.terminalcommands.view.adapter.CategoryRecyclerViewAdapter;
+import net.serkanozaydin.terminalcommands.controller.ActivityController;
 import net.serkanozaydin.terminalcommands.view.adapter.CreatePdfRecyclerViewAdapter;
 
 import java.util.List;
 
-public class CreatePdfActivity extends AppCompatActivity implements CreatePdfActivityView {
+public class CreatePdfActivity extends ActivityController implements CreatePdfActivityView {
     private ProgressDialog progressDialog;
     private RecyclerView recyclerView;
     private CreatePdfRecyclerViewAdapter recyclerViewAdapter;
