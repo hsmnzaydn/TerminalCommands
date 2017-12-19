@@ -8,7 +8,8 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:screenOrientation="portrait"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name="hsmnzaydn.serkanozaydin.net.view.activity.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,9 +20,12 @@
         <activity
             android:name="hsmnzaydn.serkanozaydin.net.view.activity.category.CategoryListActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="hsmnzaydn.serkanozaydin.net.view.activity.command.CommandListActivity" />
-        <activity android:name="hsmnzaydn.serkanozaydin.net.view.activity.mycommand.MyCommandListActivity" />
-        <activity android:name="hsmnzaydn.serkanozaydin.net.view.activity.createpdf.CreatePdfActivity" />
+        <activity android:name="hsmnzaydn.serkanozaydin.net.view.activity.command.CommandListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="hsmnzaydn.serkanozaydin.net.view.activity.mycommand.MyCommandListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="hsmnzaydn.serkanozaydin.net.view.activity.createpdf.CreatePdfActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

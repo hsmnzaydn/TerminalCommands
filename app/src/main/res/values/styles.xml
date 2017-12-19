@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -7,6 +7,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
 
 
     <style name="MyProgressDialogStyle" parent="android:Theme.Holo.Dialog">
@@ -79,9 +80,17 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">15sp</item>
     </style>
-    <style name="AppTheme.NoActionBar">
+    <style name="AppTheme.NoActionBar" >
+        <item name="colorPrimary">@color/colorPrimary</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="SplashScreenTitleText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_marginBottom">100dp</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
