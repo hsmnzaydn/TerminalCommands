@@ -21,7 +21,7 @@
         android:paddingLeft="20dp"
         android:paddingRight="20dp">
 
-        <net.serkanozaydin.terminalcommands.controller.TextViewController
+        <hsmnzaydn.serkanozaydin.net.controller.TextViewController
             android:id="@+id/error_popup_title_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

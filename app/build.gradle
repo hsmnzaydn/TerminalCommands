@@ -4,10 +4,10 @@ android {
     compileSdkVersion 26
 
     defaultConfig {
-        applicationId "net.serkanozaydin.terminalcommands"
+        applicationId "hsmnzaydn.serkanozaydin.net"
         minSdkVersion 15
         targetSdkVersion 26
-        versionCode 1
+        versionCode 39
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }

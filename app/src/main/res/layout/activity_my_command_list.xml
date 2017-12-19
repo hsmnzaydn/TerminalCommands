@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="net.serkanozaydin.terminalcommands.view.activity.mycommand.MyCommandListActivity">
+    tools:context="hsmnzaydn.serkanozaydin.net.view.activity.mycommand.MyCommandListActivity">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/activity_my_command_list_recyclerview"

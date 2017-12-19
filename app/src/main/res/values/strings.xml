@@ -27,6 +27,6 @@
     <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
     <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
 
-    <string name="action_settings" translatable="false">Settings</string>
     <string name="action_transfer_pdf">Transfer To PDF</string>
+    <string name="tollbar_search">Search</string>
 </resources>

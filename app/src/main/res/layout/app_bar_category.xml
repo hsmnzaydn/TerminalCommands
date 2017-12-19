@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="net.serkanozaydin.terminalcommands.view.activity.category.CategoryListActivity">
+    tools:context="hsmnzaydn.serkanozaydin.net.view.activity.category.CategoryListActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="net.serkanozaydin.terminalcommands.view.activity.createpdf.CreatePdfActivity">
+    tools:context="hsmnzaydn.serkanozaydin.net.view.activity.createpdf.CreatePdfActivity">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/activity_create_pdf_recyclerview"
