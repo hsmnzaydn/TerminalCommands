@@ -29,6 +29,7 @@ public class CreatePdfActivity extends ActivityController implements CreatePdfAc
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_pdf);
         init();
+
         createPdfActivityPresenterImp=new CreatePdfActivityPresenterImp(new CreatePdfActivityInteractorImp(),this,CreatePdfActivity.this);
         createPdfActivityPresenterImp.onSuccessConfiguration();
 

@@ -13,6 +13,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
+import hsmnzaydn.serkanozaydin.net.R;
+
 
 /**
  * Created by hsmnzaydn on 24.07.2017.
@@ -32,7 +34,7 @@ public class CreatePdf {
 
     public void createPDF(String stringBuilder){
 
-        outPath=getContext().getExternalCacheDir()+"/terminalKomutlari.pdf";
+        outPath=getContext().getExternalCacheDir()+"/"+context.getText(R.string.app_name)+".pdf";
         Document doc=new Document();
 
 
@@ -49,14 +51,14 @@ public class CreatePdf {
     }
 
     public void shareWithmail(){
-        File filelocation = new File(getContext().getExternalCacheDir(), "terminalKomutlari.pdf");
+        File filelocation = new File(getContext().getExternalCacheDir(), context.getText(R.string.app_name)+".pdf");
         Uri path = Uri.fromFile(filelocation);
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
         emailIntent .setType("vnd.android.cursor.dir/email");
 
         emailIntent .putExtra(Intent.EXTRA_EMAIL, "");
         emailIntent .putExtra(Intent.EXTRA_STREAM, path);
-        emailIntent .putExtra(Intent.EXTRA_SUBJECT, "Terminal Komutları PDF");
+        emailIntent .putExtra(Intent.EXTRA_SUBJECT, context.getText(R.string.app_name));
         getContext().startActivity(Intent.createChooser(emailIntent , "https://play.google.com/store/apps/details?id=hsmnzaydn.serkanozaydin.net&hl=tr"));
     }
 

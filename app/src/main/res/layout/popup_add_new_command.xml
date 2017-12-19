@@ -2,7 +2,7 @@
     android:id="@+id/add_command_popup_relative_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_popup"
+    android:background="@drawable/tranparent"
     android:gravity="center">
 
     <RelativeLayout
@@ -56,6 +56,14 @@
         </LinearLayout>
 
     </RelativeLayout>
-
+    <ImageView
+        android:id="@+id/popup_cancel_imageview"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/relativeLayout1"
+        android:layout_alignTop="@+id/relativeLayout1"
+        android:background="@drawable/action_cancel"
+        android:padding="3dp"
+        android:layout_alignRight="@+id/relativeLayout1" />
 
 </RelativeLayout>

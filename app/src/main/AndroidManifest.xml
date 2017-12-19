@@ -9,8 +9,9 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:screenOrientation="portrait"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name="hsmnzaydn.serkanozaydin.net.view.activity.SplashScreenActivity">
+        android:theme="@style/AppTheme">
+        <activity android:name="hsmnzaydn.serkanozaydin.net.view.activity.SplashScreenActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,11 +22,14 @@
             android:name="hsmnzaydn.serkanozaydin.net.view.activity.category.CategoryListActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="hsmnzaydn.serkanozaydin.net.view.activity.command.CommandListActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            />
         <activity android:name="hsmnzaydn.serkanozaydin.net.view.activity.mycommand.MyCommandListActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            />
         <activity android:name="hsmnzaydn.serkanozaydin.net.view.activity.createpdf.CreatePdfActivity"
-            android:screenOrientation="portrait"/>
+            android:theme="@style/AppTheme"
+            />
     </application>
 
 </manifest>

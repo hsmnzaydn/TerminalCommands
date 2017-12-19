@@ -12,6 +12,7 @@ import android.view.ViewTreeObserver;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
@@ -66,6 +67,7 @@ public class PopupUtils {
         EditText titleCommandEditText;
         EditText detailCommandEditText;
         Button saveCommandButton;
+        ImageView cancelImageView;
 
 
         inflater = (LayoutInflater) activity
@@ -93,7 +95,7 @@ public class PopupUtils {
         titleCommandEditText=layout.findViewById(R.id.popup_add_new_command_title_edit_text);
         detailCommandEditText=layout.findViewById(R.id.popup_add_new_command_detail_edit_text);
         saveCommandButton=layout.findViewById(R.id.popup_Add_new_command_save_button);
-
+        cancelImageView=layout.findViewById(R.id.popup_cancel_imageview);
 
         saveCommandButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,6 +104,13 @@ public class PopupUtils {
                 String title=titleCommandEditText.getText().toString();
                 String detail=detailCommandEditText.getText().toString();
                 DbUtils.saveCommandToDB(activity,new Command(title,detail));
+            }
+        });
+
+        cancelImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                popupAddCommand.dismiss();
             }
         });
 
