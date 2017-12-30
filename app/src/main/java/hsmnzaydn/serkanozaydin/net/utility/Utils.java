@@ -52,6 +52,13 @@ public class Utils {
                 e.printStackTrace();
             }
         }
+        if (language.equals(Constant.FRENCH)) {
+            try {
+                is = activity.getAssets().open("french.json");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
         String json="";
         try {
             int size = is.available();

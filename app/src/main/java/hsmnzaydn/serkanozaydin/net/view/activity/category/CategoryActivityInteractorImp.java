@@ -25,6 +25,9 @@ public class CategoryActivityInteractorImp implements CategoryActivityInteractor
             else if (language.equals(Constant.TURKISH)){
                 listener.onTurkish(Utils.getDataFromRaw(activity,Constant.TURKISH));
             }
+            else if (language.equals(Constant.FRENCH)){
+                listener.onTurkish(Utils.getDataFromRaw(activity,Constant.FRENCH));
+            }
             else {
                 listener.onEnglish(Utils.getDataFromRaw(activity,Constant.ENGLISH));
             }

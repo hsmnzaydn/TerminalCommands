@@ -1,0 +1,834 @@
+[
+  {
+    "id": 0,
+    "categoryName": "Commandes de fichiers",
+    "categoryThumbnail": "action_file",
+    "commands": [
+      {
+        "id":0,
+        "CommandName": "ls",
+        "Detail": "Donnez les noms des fichiers sous le dossier"
+      },
+      {
+        "id":1,
+        "CommandName": "ls -i",
+        "Detail": "Indique le numéro d'inode du fichier"
+      },
+      {
+        "id":2,
+        "CommandName": "ls -R",
+        "Detail": "Répète la liste des sous-répertoires"
+      },
+      {
+        "id":3,
+        "CommandName": "ls -l",
+        "Detail": "Affiche le fichier ou le répertoire Affiche la date et l'heure du changement de fichier."
+      },
+      {
+        "id":4,
+        "CommandName": "ls -lh",
+        "Detail": "Affiche les tailles de fichier dans un format lisible"
+      },
+      {
+        "id":5,
+        "CommandName": "ls -al",
+        "Detail": "Afficher les fichiers cachés"
+      },
+      {
+        "id":6,
+        "CommandName": "cd chemin du fichier",
+        "Detail": "Le fichier que vous modifiez va changer le chemin"
+      },
+      {
+        "id":7,
+        "CommandName": "cd ..",
+        "Detail": "Aller au chemin de fichier précédent"
+      },
+      {
+        "id":8,
+        "CommandName": "pwd",
+        "Detail": "Nous donne ce que nous avons"
+      },
+      {
+        "id":9,
+        "CommandName": "mkdir annuaire",
+        "Detail": "Créer un nouveau répertoire"
+      },
+      {
+        "id":10,
+        "CommandName": "rm fichier",
+        "Detail": "Supprime le fichier"
+      },
+      {
+        "id":11,
+        "CommandName": "rm -r annuaire",
+        "Detail": "Supprimer le répertoire"
+      },
+      {
+        "id":12,
+        "CommandName": "rm -f fichier",
+        "Detail": "Forcer le fichier à supprimer"
+      },
+      {
+        "id":13,
+        "CommandName": "rm *",
+        "Detail": "Supprimer tous les fichiers"
+      },
+      {
+        "id":14,
+        "CommandName": "rm a*",
+        "Detail": "Supprimez tous les fichiers commençant par un"
+      },
+      {
+        "id":15,
+        "CommandName": "rm bet*as",
+        "Detail": "supprime tous les fichiers commençant par bet et se terminant par"
+      },
+      {
+        "id":16,
+        "CommandName": "cp fichier 1 fichier 2",
+        "Detail": "copier le fichier 1 dans le fichier 2"
+      },
+      {
+        "id":17,
+        "CommandName": "cp -r répertoire 1 répertoire 2",
+        "Detail": "Copiez le répertoire 1 dans le répertoire 2. S'il n'y a pas de répertoire 2, créez un répertoire nommé répertoire 2."
+      },
+      {
+        "id":18,
+        "CommandName": "mv fichier 1 fichier 2",
+        "Detail": "déplace le fichier 1 vers le fichier 2"
+      },
+      {
+        "id":19,
+        "CommandName": "ls -s fichier link",
+        "Detail": "Crée un lien symbolique dans le fichier."
+      },
+      {
+        "id":20,
+        "CommandName": "touch fichier",
+        "Detail": "Créez un fichier ou mettez à jour un fichier"
+      },
+      {
+        "id":21,
+        "CommandName": "cat>fichier",
+        "Detail": "Écrire une entrée dans le fichier"
+      },
+      {
+        "id":22,
+        "CommandName": "more fichier",
+        "Detail": "Affiche le contenu du fichier"
+      },
+      {
+        "id":23,
+        "CommandName": "head fichier",
+        "Detail": "Donne les 10 premières lignes du fichier"
+      },
+      {
+        "id":24,
+        "CommandName": "less texte",
+        "Detail": "Sort le contenu du fichier texte"
+      },
+      {
+        "id":25,
+        "CommandName": "comm fichier A fichier B",
+        "Detail": "Les deux fichiers comparent la ligne à la ligne."
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "categoryName": "Commandes de recherche",
+    "categoryThumbnail": "action_search",
+    "commands": [
+      {
+        "id":0,
+        "CommandName": "locate fichier",
+        "Detail": "Indexer d'autres fichiers dans le répertoire où se trouve le fichier"
+      },
+      {
+        "id":1,
+        "CommandName": "find / -name foo",
+        "Detail": "Recherche par nom donnée au fichier"
+      },
+      {
+        "id":2,
+        "CommandName": "find /home -iname fichier.txt",
+        "Detail": "Recherchez les fichiers portant le nom fichier.texte et les majuscules et minuscules dans la ligne principale."
+      },
+      {
+        "id":3,
+        "CommandName": "find / -type d -name fichier",
+        "Detail": "trouve tous les fichiers dans le nom du fichier"
+      },
+      {
+        "id":4,
+        "CommandName": "find . -type f -name *.php",
+        "Detail": "Trouver tous les fichiers php dans l'index"
+      },
+      {
+        "id":5,
+        "CommandName": "find . -type f -perm 0777 - print",
+        "Detail": "Trouve tous les répertoires avec une trace de 777"
+      },
+      {
+        "id":6,
+        "CommandName": "find ~ -empty",
+        "Detail": "Trouve tous les répertoires vides dans le répertoire Home"
+      },
+      {
+        "id":7,
+        "CommandName": "find / -atime 50",
+        "Detail": "Trouve tous les fichiers saisis il y a 50 jours"
+      },
+      {
+        "id":8,
+        "CommandName": "find / -cmin -60",
+        "Detail": "Trouve tous les fichiers modifiés dans 1 heure"
+      },
+      {
+        "id":9,
+        "CommandName": "find / -mmin -60",
+        "Detail": "Trouve tous les fichiers modifiés en 1 heure"
+    },
+    {
+      "id":10,
+      "CommandName": "find / -size +50M -size -100M",
+      "Detail": "Trouve tous les fichiers entre 50 Mo et 100 Mo"
+    },
+    {
+      "id":11,
+      "CommandName": "lsattr",
+      "Detail": "Permet de savoir si des fichiers ne peuvent pas être modifiés sur le système"
+    },
+    {
+      "id":12,
+      "CommandName": "find <chemin du fichier> -perm -4000",
+      "Detail": "Utilisé pour trouver des fichiers avec des bits suid dans le chemin du fichier"
+    }
+  ]
+},
+{
+  "id": 2,
+  "categoryName": "Commandes de compression",
+  "categoryThumbnail": "action_zip",
+  "commands": [
+    {
+      "id":0,
+      "CommandName": "bzip nom de fichier",
+      "Detail": "compresser le fichier zip."
+    },
+    {
+      "id":1,
+      "CommandName": "tar cf fichier.tar fichier",
+      "Detail": "convertir le fichier en fichier.tar"
+    },
+    {
+      "id":2,
+      "CommandName": "tar xf fichier.tar",
+      "Detail": "Supprimer le fichier file.tar"
+    },
+    {
+      "id":3,
+      "CommandName": "tar czf fichier.tar.gz fichier",
+      "Detail": "convertir le fichier en fichier.tar.gz"
+    },
+    {
+      "id":4,
+      "CommandName": "tar xzf fichier.tar.gz",
+      "Detail": "supprimer file.tar.gz"
+    },
+    {
+      "id":5,
+      "CommandName": "tar cjf fichier.tar.bz2",
+      "Detail": "Créer un fichier tar en utilisant Bzip2"
+    },
+    {
+      "id":6,
+      "CommandName": "tar xjf fichier.tar.bz2",
+      "Detail": "Supprimer le fichier .tar.bz2"
+    },
+    {
+      "id":7,
+      "CommandName": "gzip fichier",
+      "Detail": "convertir le fichier en fichier.gz"
+    },
+    {
+      "id":8,
+      "CommandName": "gzip -d fichier.gz",
+      "Detail": "Supprimer le fichier file.gz"
+    }
+  ]
+},
+{
+  "id": 3,
+  "categoryName": "Commandes FTP",
+  "categoryThumbnail": "action_ftp",
+  "commands": [
+    {
+      "id":0,
+      "CommandName": "ftp",
+      "Detail": "Entrez le client Ftp"
+    },
+    {
+      "id":1,
+      "CommandName": "-p",
+      "Detail": "Utilise le mode passif"
+    },
+    {
+      "id":2,
+      "CommandName": "-i",
+      "Detail": "Désactive les demandes lors de plusieurs transferts."
+    },
+    {
+      "id":3,
+      "CommandName": "tar cjf friecher.tar.bz2",
+      "Detail": "Créer un fichier tar en utilisant Bzip2"
+    },
+    {
+      "id":4,
+      "CommandName": "-v",
+      "Detail": "Mode verbeux"
+    },
+    {
+      "id":5,
+      "CommandName": "-d",
+      "Detail": "Débogage actif"
+    },
+    {
+      "id":6,
+      "CommandName": "$",
+      "Detail": "Exécuter la macro"
+    },
+    {
+      "id":7,
+      "CommandName": "account[password]",
+      "Detail": "Fournit un mot de passe avec contrôle à distance"
+    },
+    {
+      "id":8,
+      "CommandName": "ascii",
+      "Detail": "Définit les transferts de fichiers vers les protocoles ascii."
+    },
+    {
+      "id":9,
+      "CommandName": "binary",
+      "Detail": "Fournit un support pour le transfert de fichiers image"
+    },
+    {
+      "id":10,
+      "CommandName": "bye",
+      "Detail": "Dénomination FTP"
+    },
+    {
+      "id":12,
+      "CommandName": "dir",
+      "Detail": "Affiche les fichiers de votre répertoire actuel"
+    },
+    {
+      "id":13,
+      "CommandName": "open Host",
+      "Detail": "Ouvre la connexion à l'hôte"
+    },
+    {
+      "id":14,
+      "CommandName": "status",
+      "Detail": "Afficher l'état du serveur FTP"
+    }
+  ]
+},
+{
+  "id": 4,
+  "categoryName": "Commandes réseau",
+  "categoryThumbnail": "action_network",
+  "commands": [
+    {
+      "CommandName": "arp",
+      "Detail": "Il vérifie votre carte réseau et affiche votre adresse IP"
+    },
+    {
+      "CommandName": "ifconfig",
+      "Detail": "Indique l'interface réseau"
+    },
+    {
+      "CommandName": "ping host",
+      "Detail": "Adresse hôte Ping"
+    },
+    {
+      "CommandName": "whois domain",
+      "Detail": "Obtient des informations de domaine"
+    },
+    {
+      "CommandName": "dig domain",
+      "Detail": "Domainin Dns apporte des informations"
+    },
+    {
+      "CommandName": "wget adresse",
+      "Detail": "Télécharger le fichier dans la destination"
+    },
+    {
+      "CommandName": "wget -c adresse",
+      "Detail": "Continue d'interrompre le téléchargement"
+    },
+    {
+      "CommandName": "netstat",
+      "Detail": "Inspecter les connexions réseau et ouvrir les sockets "
+    }
+  ]
+},
+{
+  "id": 5,
+  "categoryName": "Commandes système",
+  "categoryThumbnail":"action_setting",
+  "commands": [
+    {
+      "CommandName": "date",
+      "Detail": "Afficher la date"
+    },
+    {
+      "CommandName": "date;who",
+      "Detail": "Afficher la date et l'utilisateur"
+    },
+    {
+      "CommandName": "sudo commandement",
+      "Detail": "Exécuter la commande avec l'autorisation de l'administrateur"
+    },
+    {
+      "CommandName": "sudo su",
+      "Detail": "Vous allez passer en mode administrateur dans le terminal"
+    },
+    {
+      "CommandName": "cal",
+      "Detail": "Afficher un petit calendrier"
+    },
+    {
+      "CommandName": "uptime",
+      "Detail": "Affiche l'heure actuelle sur le système"
+    },
+    {
+      "CommandName": "whoami",
+      "Detail": "Afficher le nom d'utilisateur auquel vous êtes connecté"
+    },
+    {
+      "CommandName": "fingure nom d'utilisateur",
+      "Detail": "Affiche les informations sur le nom d'utilisateur"
+    },
+    {
+      "CommandName": "cat /proc/cpuinfo",
+      "Detail": "Affiche les informations du processeur"
+    },
+    {
+      "CommandName": "cat /proc/meminfo",
+      "Detail": "Affiche les informations sur la mémoire"
+    },
+    {
+      "CommandName": "df",
+      "Detail": "Indique l'utilisation du disque"
+    },
+    {
+      "CommandName": "free",
+      "Detail": "Affiche la mémoire et l'échange utilisé"
+    },
+    {
+      "CommandName": "whereis application",
+      "Detail": "Montrer où l'application est installée"
+    },
+    {
+      "CommandName": "which application",
+      "Detail": "Indique quelle application fonctionne par défaut"
+    },
+    {
+      "CommandName": "ps aux",
+      "Detail": "Affiche les applications en cours d'exécution sur le système"
+    },
+    {
+      "CommandName": "kill application",
+      "Detail": "Ferme immédiatement l'application"
+    },
+    {
+      "CommandName": "sensors",
+      "Detail": "Affiche les températures du processeur"
+    },
+    {
+      "CommandName": "uname -lettre",
+      "Detail": "-m Donner le nom de l'équipement de la machine.\n-n Écrit Nodename. Nodename est utilisé pour la communication réseau du système.\n-r Afficher la version du noyau\n-s Le système écrit le nom\n-v Ecrire la version du système d'exploitation\n-a écrivez les informations complètes ci-dessus"
+    },
+    {
+      "CommandName": "alias",
+      "Detail": "Crée des raccourcis pour une commande"
+    },
+    {
+      "CommandName": "dd",
+      "Detail": "Utilisé pour copier le contenu du disque"
+    },
+    {
+      "CommandName": "shutdown",
+      "Detail": "Utilisé pour éteindre le système"
+    },
+    {
+      "CommandName": "apropos",
+      "Detail": "Un certain mot est recherché sur les pages de manuel."
+    },
+    {
+      "CommandName": "chfn",
+      "Detail": "Modifier les informations sur le doigt"
+    },
+    {
+      "CommandName": "chgrp",
+      "Detail": "Changer de groupe"
+    },
+    {
+      "CommandName": "clear",
+      "Detail": "Nettoie le moniteur"
+    },
+    {
+      "CommandName": "continue",
+      "Detail": "Un plan continuera à partir d'où vous vous êtes arrêté après une certaine condition. "
+    },
+    {
+      "CommandName": "deluser utilisateur",
+      "Detail": "Supprimer l'utilisateur "
+    },
+    {
+      "CommandName": "delgroup groupe",
+      "Detail": "Supprimer le groupe "
+    },
+    {
+      "CommandName": "groupadd groupe",
+      "Detail": "Créer un nouveau groupe "
+    },
+    {
+      "CommandName": "halt",
+      "Detail": "Arrêtez le système "
+    },
+    {
+      "CommandName": "help",
+      "Detail": "Utilisé pour obtenir de l'aide"
+    },
+    {
+      "CommandName": "lsb_release -a",
+      "Detail": "Utilisé pour afficher des informations sur la distribution"
+    },
+    {
+      "CommandName": "dmidecode",
+      "Detail": "Utilisé pour obtenir des informations sur notre système (bios, mémoire, cache, etc.) Mode: bios de type demicode, type demicode..."
+    },
+    {
+      "CommandName": "free -m",
+      "Detail": "Utilisé pour afficher la quantité de mémoire."
+    },
+    {
+      "CommandName": "history",
+      "Detail": "Il est utile de voir les lignes de commande précédemment utilisées."
+    },
+    {
+      "CommandName": "passwd <nom d'utilisateur>",
+      "Detail": "Utilisé pour changer le mot de passe du nom d'utilisateur."
+    },
+    {
+      "CommandName": "usermod -L <nom d'utilisateur>",
+      "Detail": "Utilisé pour verrouiller le compte d'utilisateur."
+    },
+    {
+      "CommandName": "usermod -U <nom d'utilisateur>",
+      "Detail": "Il est utilisé pour réactiver le compte d'utilisateur."
+    },
+    {
+      "CommandName": "chage -E histoire(12.02.2022) <nom d'utilisateur>",
+      "Detail": "Permet de déterminer l'heure d'expiration du mot de passe du compte utilisateur. "
+    },
+    {
+      "CommandName": "echo $SHELL",
+      "Detail": "Utilisé pour afficher le programme shell utilisé sur votre système."
+    }
+  ]
+},
+{
+  "id": 6,
+  "categoryName": "Commandes d'autorisation",
+  "categoryThumbnail":"action_permission",
+  "commands": [
+    {
+      "CommandName": "chmod +r fichier",
+      "Detail": "Vous permet de lire le fichier"
+    },
+    {
+      "CommandName": "chmod +w fichier",
+      "Detail": "Vous permet d'écrire dans le fichier"
+    },
+    {
+      "CommandName": "chmod u+rw fichier",
+      "Detail": "L'avoir (qui est habituellement vous) a l'autorisation de lire et d'écrire sur mon dossier."
+    },
+    {
+      "CommandName": "chmod a-x fichier",
+      "Detail": "L'avoir (qui est habituellement vous) a l'autorisation de lire et d'écrire sur mon dossier...."
+    },
+   
+    {
+      "CommandName": "chmod +x fichier",
+      "Detail": "Permet au fichier de s'exécuter"
+    },
+    {
+      "CommandName": "chattr +i fichier",
+      "Detail": "Utilisé pour rendre le fichier irrévocable"
+    },
+    {
+      "CommandName": "chmod a+r fichier",
+      "Detail": "Permet à tous les utilisateurs de lire"
+    }
+  ]
+},
+{
+  "id": 7,
+  "categoryName": "commandes git",
+  "categoryThumbnail":"action_git",
+  "commands": [
+    {
+      "CommandName": "git config --global user.name \"Kullanıcı adı\"",
+      "Detail": "Définir le nom d'utilisateur à utiliser lors de l'utilisation de gitr"
+    },
+    {
+      "CommandName": "git config --global email \"Adresse mail\"",
+      "Detail": "Indiquez l'adresse mail à utiliser lors de l'utilisation de git"
+    },
+    {
+      "CommandName": "git log",
+      "Detail": "Afficher toutes les modifications effectuées dans le magasin local"
+    },
+    {
+      "CommandName": "git status",
+      "Detail": "Afficher les modifications que vous avez effectuées dans votre dépôt"
+    },
+    {
+      "CommandName": "git clone adresse de l'entrepôt",
+      "Detail": "Copies de votre grand magasin local"
+    },
+    {
+      "CommandName": "git clone nom d'utilisateur@serveurs:/manière/magasin ",
+      "Detail": "Le référentiel du serveur distant est votre dossier local"
+    },
+    {
+      "CommandName": "git add nom de fichier",
+      "Detail": "Ajoute des fichiers à l'index que vous souhaitez envoyer au référentiel"
+    },
+    {
+      "CommandName": "git add *",
+      "Detail": "Ajoute le fichier entier à l'index"
+    },
+    {
+      "CommandName": "git commit -m \" Message de livraison \" ",
+      "Detail": "Vous allez envoyer un message au message"
+    },
+    {
+      "CommandName": "git push origin master",
+      "Detail": "Fichiers que vous ajoutez à l'index du référentiel distant"
+    },
+    {
+      "CommandName": "git checkout -b nouveau nom de la succursale",
+      "Detail": "Créer une nouvelle branche"
+    },
+    {
+      "CommandName": "git checkout master",
+      "Detail": "Retournez à la branche principale"
+    },
+    {
+      "CommandName": "git branch -d branche",
+      "Detail": "La soie dans la vallée"
+    },
+    {
+      "CommandName": "git push origin branche",
+      "Detail": "Apportez les modifications que vous faites"
+    },
+    {
+      "CommandName": "git pull",
+      "Detail": "Prendre les derniers changements"
+    },
+    {
+      "CommandName": "git merge branche",
+      "Detail": "Utilisé pour combiner avec une autre branche"
+    }
+  ]
+},
+{
+  "id": 8,
+  "categoryName": "Commandes APT",
+  "categoryThumbnail":"action_apt",
+  "commands": [
+    {
+      "CommandName": "apt-get update",
+      "Detail": "Actualiser les mises à jour dans l'état approprié."
+    },
+    {
+      "CommandName": "apt-get upgrade",
+      "Detail": "Il met à jour tous les paquets. (le bordereau supérieur est surélevé)"
+    },
+    {
+      "CommandName": "apt-get dist-upgrade",
+      "Detail": "Mettez à niveau la version Debian."
+    },
+    {
+      "CommandName": "apt-get install nom du paquet",
+      "Detail": "Forfaits"
+    },
+    {
+      "CommandName": "apt-get install paquet1 paquet2 paquet3 paquet4 paquet5 paquet6 ...",
+      "Detail": "Installer plusieurs paquets"
+    },
+    {
+      "CommandName": "sudo apt-get purge paquet",
+      "Detail": "Supprime un package installé avec ses fichiers de configuration."
+    },
+    {
+      "CommandName": "apt-get remove paquet",
+      "Detail": "Supprimer le paquet"
+    },
+    {
+      "CommandName": "apt-get autoremove",
+      "Detail": "Supprimer les anciens paquets"
+    },
+    {
+      "CommandName": "apt-get -f install",
+      "Detail": "Il essaie de réparer les paquets défectueux"
+    },
+    {
+      "CommandName": "dpkg -i paquet.deb",
+      "Detail": "Charge le fichier package.deb"
+    },
+    {
+      "CommandName": "sudo add-apt-repository l'adresse PPA du nouveau magasin",
+      "Detail": "Ajoute un nouveau référentiel"
+    },
+    {
+      "CommandName": "sudo apt-cache show paquet",
+      "Detail": "Fournit des informations sur le programme"
+    },
+    {
+      "CommandName": "apt-get help",
+      "Detail": "Dit à propos de la commande Apt"
+    }
+  ]
+},
+{
+  "id": 9,
+  "categoryName": "Commandes RPM",
+  "categoryThumbnail":"action_rpm",
+  "commands": [
+    {
+      "CommandName": "rpm -ivh <program.rpm>",
+      "Detail": "Utilisé pour installer le fichier avec l'extension RPM"
+    },
+    {
+      "CommandName": "rpm -ev <program.rpm>",
+      "Detail": "Le package installé est supprimé du système"
+    },
+    {
+      "CommandName": "yum install <nom du programme>",
+      "Detail": "Il construit le programme sur le sol."
+    },
+    {
+      "CommandName": "apt-cache search <nom du programme> ",
+      "Detail": "Le programme que nous voulons installer appelle à une dépression."
+    },
+    {
+      "CommandName": "apt-cache show <nom du programme> ",
+      "Detail": "Il est utilisé pour obtenir des informations sur le programme que nous voulons installer."
+    },
+    {
+      "CommandName": "yum remove <nom du paquet> ",
+      "Detail": "Supprime le package installé du système."
+    },
+    {
+      "CommandName": "yum update",
+      "Detail": "Sistemi güncellemek için kullanılır."
+    }
+  ]
+},
+{
+  "id": 10,
+  "categoryName": "Pacman Komutları",
+  "categoryThumbnail":"Commandes Pacman",
+  "commands": [
+    {
+      "CommandName": "pacman-optimize && sync",
+      "Detail": "Optimiser et adapter la vitesse de téléchargement"
+    },
+    {
+      "CommandName": "pacman -Su",
+      "Detail": "Mettez à jour votre système"
+    },
+    {
+      "CommandName": "IgnorePkg=package_name",
+      "Detail": "Booste certains paquets"
+    },
+    {
+      "CommandName": "IgnoreGroup=package_group",
+      "Detail": "Met à jour le groupe de paquets par ignorance"
+    },
+    {
+      "CommandName": "pacman -S nom du paquet",
+      "Detail": "Forfaits"
+    },
+    {
+      "CommandName": "pacman -Sw nom du paquet",
+      "Detail": "Télécharger un package sans l'installer"
+    },
+    {
+      "CommandName": "pacman -U /paquet manière/nom du paquet.pkg.tar.xz",
+      "Detail": "installer le package local tar.xz"
+    },
+    {
+      "CommandName": "pacman -U http://www.examplepackage/repo/examplepkg.tar.xz",
+      "Detail": "L'emballage se charge sur le miroir"
+    },
+    {
+      "CommandName": "pacman -R nom du paquet",
+      "Detail": "Supprimer le paquet"
+    },
+    {
+      "CommandName": "pacman -Rs nom du paquet",
+      "Detail": "Supprimer le package avec des dépendances qui ne sont pas utilisées dans d'autres packages"
+    },
+    {
+      "CommandName": "pacman -Rsc nom du paquet",
+      "Detail": "Supprimer un package avec une dépendance complète"
+    },
+    {
+      "CommandName": "pacman -Sc $(pacman -Qdtq)",
+      "Detail": "Vider tous les paquets inutiles"
+    },
+    {
+      "CommandName": "pacman -Scc",
+      "Detail": "Vide la mémoire que les paquets contiennent"
+    },
+    {
+      "CommandName": "pacman -Sc",
+      "Detail": "Nettoie la mémoire"
+    },
+    {
+      "CommandName": "pacman -Rs $(pacman -Qtdq)",
+      "Detail": "Nettoie les paquets inutiles"
+    },
+    {
+      "CommandName": "pacman -Ss nom du paquet",
+      "Detail": "Recherche de paquet avec des explications"
+    },
+    {
+      "CommandName": "pacman -Qs nom du paquet",
+      "Detail": "Rechercher dans les packages installés"
+    },
+    {
+      "CommandName": "pacman -Si nom du paquet",
+      "Detail": "Obtenir des informations sur le paquet"
+    },
+    {
+      "CommandName": "pacman -Ql",
+      "Detail": "Liste des paquets installés"
+    },
+    {
+      "CommandName": "pacman -Qdt",
+      "Detail": "Liste de paquets inutiles sans dépendances"
+    }
+  ]
+}
+]

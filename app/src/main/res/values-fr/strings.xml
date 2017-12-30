@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Commandes de terminal</string>
+    <string name="error">Erreur</string>
+    <string name="error_choice_language">Veuillez sélectionner une langue depuis votre téléphone</string>
+    <string name="error_there_is_problem">Il y a un problème</string>
+    <string name="nav_database">Ma commande</string>
+    <string name="nav_create_pdf">Créer un fichier PDF</string>
+    <string name="nav_open_source_project">Ce projet est un projet open source</string>
+    <string name="empty_command_list">Commande non trouvée, veuillez ajouter une commande</string>
+    <string name="empty_select_a_category">Veuillez sélectionner une catégorie</string>
+    <string name="popup_ok">D\'accord</string>
+    <string name="popup_save">Sauver</string>
+    <string name="popup_add_title">En-tête de commande</string>
+    <string name="popup_add_detail">Fonction de commande</string>
+    <string name="title_activity_category">Catégorie</string>
+    <string name="action_transfer_pdf">Exporter au format PDF</string>
+    <string name="tollbar_search">intermédiaire</string>
+</resources>

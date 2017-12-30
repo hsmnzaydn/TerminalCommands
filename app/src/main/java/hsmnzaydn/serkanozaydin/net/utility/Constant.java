@@ -9,7 +9,7 @@ public class Constant {
     public static final String TURKISH="tr";
     public static final String ENGLISH="eng";
     public static final String ENGLISH_BRITISH="en";
-
+    public static final String FRENCH="fr";
 
 
 
